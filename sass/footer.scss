@@ -7,12 +7,12 @@
 	margin-top: 100px;
 
 	.footer-brand {
-		font-size: 1.875rem; /* 30px */
+		font-size: 1.875rem;	// 30px
 		color: $white;
 	}
 
 	.item {
-		font-size: 0.875rem; /* 14px */
+		font-size: 0.875rem;	// 14px 
 		min-width: 200px;
 		max-width: 280px;
 		padding: 10px 0;   
@@ -31,7 +31,7 @@
 				text-align: right;
 
 				.fab {
-					font-size: 20px;
+					font-size: 1.25rem;		// 20px
 					padding: 0 10px;
 					transition: .3s;
 
