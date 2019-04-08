@@ -27,6 +27,13 @@ h4 {
 	font-weight: 700;
 }
 
+.h5,
+h5 {
+	font-size: 1.125rem;
+	/* 18px */
+	font-weight: 700;
+}
+
 a {
 	color: $black;
 
@@ -42,12 +49,52 @@ a {
 	box-sizing: border-box
 }
 
-.btn-lg {
-	padding: 1.35rem 3.35rem;
+// breadcrumb
+
+.breadcrumb {
+	font-size: 0.75rem;
+	/* 12px */
+	background-color: transparent;
 }
 
-@media (max-width: 575.98px) {
-	.btn-lg {
+// title-mark
+
+.title-mark {
+	text-align: center;
+
+	.h2 {
+		position: relative;
+		display: inline-flex;
+		margin-bottom: 50px;
+
+		&:before {
+			position: absolute;
+			top: 50%;
+			left: -55px;
+			content: '';
+			width: 40px;
+			height: 4px;
+			background: $blue;
+		}
+
+		&:after {
+			position: absolute;
+			top: 50%;
+			right: -55px;
+			content: '';
+			width: 40px;
+			height: 4px;
+			background: $blue;
+		}
+	}
+}
+
+// buttons
+
+.btn-lg {
+	padding: 1.125rem 3.35rem;
+
+	@media (max-width: $max-xs) {
 		padding: 1.05rem 3rem;
 	}
 }
