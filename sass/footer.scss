@@ -1,0 +1,59 @@
+// Footer
+
+.footer {
+    color: $white;
+    background: $dark;
+    padding: 50px 0 70px 0;
+	margin-top: 100px;
+
+	.footer-brand {
+		font-size: 1.875rem; /* 30px */
+		color: $white;
+	}
+
+	.item {
+		font-size: 0.875rem; /* 14px */
+		min-width: 200px;
+		max-width: 280px;
+		padding: 10px 0;   
+	}
+
+	.list-box {
+		height: 100%;
+
+		.list {
+			display: flex;
+			flex-direction: column;
+			height: 90%;
+
+			.social-block {
+				margin-top: auto;
+				text-align: right;
+
+				.fab {
+					font-size: 20px;
+					padding: 0 10px;
+					transition: .3s;
+
+					&:hover {
+						color: $blue;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* footer-bottom */
+
+.footer-bottom {
+    color: $white;
+	background: $black;
+	
+	.container {
+		display: flex;
+		align-items: center;
+		height: 60px;    
+	}
+}
+
