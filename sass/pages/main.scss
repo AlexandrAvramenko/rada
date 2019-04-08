@@ -162,36 +162,6 @@
 /* news */
 
 .news {
-	.news-title {
-		text-align: center;
-	}
-
-	.h2 {
-		position: relative;
-		display: inline-flex;
-		margin-bottom: 50px;
-
-		&:before {
-			position: absolute;
-			top: 50%;
-			left: -55px;
-			content: '';
-			width: 40px;
-			height: 4px;
-			background: $blue;
-		}
-
-		&:after {
-			position: absolute;
-			top: 50%;
-			right: -55px;
-			content: '';
-			width: 40px;
-			height: 4px;
-			background: $blue;
-		}
-	}
-
 	.news-img {
 		width: 100%;
 	}
