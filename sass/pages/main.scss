@@ -32,7 +32,7 @@
 .card {
 	border: transparent;
 	border-radius: 0;
-	box-shadow: 0px 8px 34.2px 10.8px rgba(0, 0, 0, 0.1);
+	box-shadow: $box-shadow;
 
 	.card-img {
 		width: 100%;
@@ -162,15 +162,10 @@
 /* news */
 
 .news {
+	margin-bottom: 100px;
 	.news-img {
 		width: 100%;
-	}
-
-	.comment {
-		font-size: 0.75rem;	// 12px
-		color: $dark-grey;
-		padding: 5px 0 15px 0;
-	}
+	}	
 
 	.card-text {
 		color: $grey;
