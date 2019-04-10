@@ -1,0 +1,22 @@
+.in-progress {
+    .box-condition {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        .condition {
+            margin: 0;
+        }
+    }
+
+    .table-responsive {
+        padding-bottom: 0;
+        margin-bottom: 100px;
+        tr {
+            th {
+                padding-bottom: 20px;
+            }              
+        }        
+    }
+}
+

@@ -1,0 +1,28 @@
+.potochna-sesiya {
+    .table-responsive {
+        .table {
+
+            th,
+            td {
+                padding: 35px;
+
+                @media (max-width: $max-lg) {
+                    padding: 20px;
+                }
+            }
+
+            tbody {
+                tr {
+                    
+                    td:first-child {
+                        white-space: nowrap;
+                    }
+
+                    td:nth-child(3) {
+                        min-width: 450px;
+                    }
+                }
+            }
+        }
+    }
+}

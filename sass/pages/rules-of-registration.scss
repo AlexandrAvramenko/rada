@@ -1,0 +1,60 @@
+.rules-of-registration {
+    max-width: 480px;
+    margin-bottom: 220px;
+
+    .rules {
+        display: flex;
+        align-items: center;
+        margin-bottom: 45px;
+
+        p {
+            font-size: 1.125rem; // 18px 
+            font-weight: 700;
+            color: $dark-grey;
+            margin: 0 0 0 15px;
+        }
+    }
+
+    .links {
+        display: flex;
+        justify-content: space-between;
+
+        .link-blue {
+            font-weight: 400;            
+            padding-left: 35px;
+
+            &:before {
+                content: '';
+                width: 23px;
+                height: 23px;
+                background: url(../images/file.svg) no-repeat 0 50%;
+                background-size: 22px;
+                padding: 5px 15px;
+            }
+            
+        }
+
+        .form-group {
+            margin: 0;
+            label {
+                color: $blue;
+                text-decoration: underline;
+                cursor: pointer;
+                margin: 0;
+
+                &:hover {
+                    color: $black;
+                }
+            }
+
+            .form-control-file {
+                width: 0.1px;
+                height: 0.1px;
+                opacity: 0;
+                overflow: hidden;
+                position: absolute;
+                z-index: -1;                
+            }            
+        }
+    }
+}

@@ -41,38 +41,13 @@
     background-color: rgb(245, 245, 245);
     padding: 100px 0
 }
-  
+
 // comment
 
 .comment {
-	font-size: 0.75rem;	// 12px
-	color: $grey;
-	padding: 5px 0 15px 0;
-}
-
-//link-blue
-.link-blue {
-	font-weight: 700;
-	text-decoration: underline;
-	color: $blue!important;
-
-	&:hover {
-		color: $black!important;
-	}
-}
-
-// buttons
-
-.btn-lg {
-	padding: 1.125rem 3.35rem;
-
-	@media (max-width: $max-xs) {
-		padding: 1.05rem 3rem;
-	}
-}
-
-.btn-primary {
-	background: $blue;
+    font-size: 0.75rem; // 12px
+    color: $grey;
+    padding: 5px 0 15px 0;
 }
 
 // condition
@@ -82,6 +57,7 @@
     color: $dark-grey;
     margin-bottom: 50px;
 }
+
 
 // table-responsive
 .table-responsive {

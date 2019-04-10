@@ -1,0 +1,20 @@
+.search-criteria {
+    display: flex;
+    justify-content: space-between;
+    background: $light-blue;
+    padding: 40px 60px 40px 80px;
+
+    .form-group {
+        display: flex;
+        align-items: center;        
+        margin: 0;
+
+        label {
+            margin: 0 15px 0;
+        }
+
+        select {
+            width: auto;            
+        }
+    }
+}
