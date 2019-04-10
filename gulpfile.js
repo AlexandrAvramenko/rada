@@ -47,6 +47,20 @@ var path = {
 };
 
 
+/* gulp-rigger
+=========================*/
+
+var rigger = require('gulp-rigger');
+
+gulp.task('html', function() {
+    gulp.src(src.html)
+        .pipe(rigger())
+        .pipe(gulpIf(env !== 'dev', minifyHTML()))
+        .pipe(gulp.dest(outputDir))
+        .pipe(connect.reload())
+});
+
+
 
 /* Webserver config
 =========================*/
