@@ -21,7 +21,7 @@
 
         .link-blue {
             font-weight: 400;            
-            padding-left: 35px;
+            padding-left: 6px;
 
             &:before {
                 content: '';
@@ -41,6 +41,15 @@
                 text-decoration: underline;
                 cursor: pointer;
                 margin: 0;
+
+                &:before {
+                    content: '';
+                    width: 23px;
+                    height: 23px;
+                    background: url(../img/save.svg) no-repeat 0 50%;
+                    background-size: 22px;
+                    padding: 5px 15px;
+                }
 
                 &:hover {
                     color: $black;
