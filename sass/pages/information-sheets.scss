@@ -1,0 +1,85 @@
+// information-sheets-date
+.information-sheets {
+    .h3 {
+        max-width: 900px;
+        font-size: 22px;
+
+        @media (max-width: $max-sm) {
+            font-size: 1.125rem; // 18px 
+        }
+    }
+
+    .table-responsive {
+        margin-bottom: 0;
+        .table {
+
+            th {
+                padding: 0 35px 20px;
+
+                @media (max-width: $max-lg) {
+                    padding: 20px;
+                }
+            }
+
+            td {
+                padding: 35px
+            }
+
+            tbody {
+                tr {
+
+                    td:first-child {
+                        white-space: nowrap;
+                    }
+
+                    td:nth-child(3) {
+                        min-width: 450px;
+                    }
+
+                    td:nth-child(2),
+                    td:last-child {
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+
+    .marking {
+        box-shadow: $box-shadow;
+        background: $light-blue;
+        padding: 40px 60px 40px 80px;
+
+        .list {
+            font-size: 1.125rem; // 18px 
+            margin-top: 30px;
+
+            .item {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+// information-sheets
+
+.calendars {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 65px;
+
+    @media (max-width: $max-xs) {
+		justify-content: center;
+	}
+
+    img {
+        display: block;
+        margin: 65px 0;
+        box-shadow: $box-shadow;
+
+        @media (max-width: $max-sm) {
+            margin: 20px 0;
+        }
+    }
+}

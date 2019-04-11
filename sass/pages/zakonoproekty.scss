@@ -1,109 +1,43 @@
-.item {
-    padding: 30px;
-
-    .number {
-        display: inline-flex;
-        font-size: 1.5rem; // 24px 
-        font-weight: 700;
-        color: $blue;
-        border: 2px solid $blue;
-        padding: 5px 50px;
-    }
-
-    .title {
-        font-weight: 700;
-        color: $dark;
-        padding: 20px 0;
-    }
-
-    .more {
-        font-weight: 700;
-        text-decoration: underline;
-    }
-
-    &:hover {
-        box-shadow: $box-shadow;
-    }
-}
-
-.box-button {
-    margin-top: 30px;
-}
-
 // projects
 .projects {
     padding-bottom: 100px;
+
+    .item {
+        padding: 30px;
+
+        .number {
+            display: inline-flex;
+            font-size: 1.5rem; // 24px 
+            font-weight: 700;
+            color: $blue;
+            border: 2px solid $blue;
+            padding: 5px 50px;
+        }
+
+        .title {
+            font-weight: 700;
+            color: $dark;
+            padding: 20px 0;
+        }
+
+        .more {
+            font-weight: 700;
+            text-decoration: underline;
+        }
+
+        &:hover {
+            box-shadow: $box-shadow;
+        }
+    }
+
+    .box-button {
+        margin-top: 30px;
+    }
+
 }
 
 // read-also
-
 .read-also {
     background-color: rgb(245, 245, 245);
     padding: 100px 0
-}
-
-// comment
-
-.comment {
-    font-size: 0.75rem; // 12px
-    color: $grey;
-    padding: 5px 0 15px 0;
-}
-
-// condition
-.condition {
-    font-size: 0.875rem; // 14px;
-    font-weight: 300;
-    color: $dark-grey;
-    margin-bottom: 50px;
-}
-
-
-// table-responsive
-.table-responsive {
-    width: 100%;
-    box-shadow: $box-shadow;
-    overflow-x: auto;
-    padding: 40px 60px;
-    margin: 40px 0;
-
-    @media (max-width: $max-xs) {
-        padding: 20px;
-    }
-
-    .table {
-        width: 100%;
-        min-width: $max-sm;
-
-        th {
-            border-top: transparent;
-            padding: 0 150px 35px 20px;
-
-            @media (max-width: $max-lg) {
-                padding: 0 20px 35px 20px;
-            }
-
-            @media (max-width: $max-xs) {
-                padding: 20px;
-            }
-        }
-
-        td {
-            padding: 35px 150px 35px 20px;
-
-            @media (max-width: $max-lg) {
-                padding: 35px 20px 35px 20px;
-            }
-
-            @media (max-width: $max-xs) {
-                padding: 20px;
-            }
-        }
-
-    }
-}
-
-// only
-.only {
-    font-weight: 700;
 }

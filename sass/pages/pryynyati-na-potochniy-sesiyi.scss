@@ -2,13 +2,16 @@
     .table-responsive {
         .table {
 
-            th,
-            td {
-                padding: 35px;
+            th {
+                padding: 0 35px 20px;
 
                 @media (max-width: $max-lg) {
                     padding: 20px;
                 }
+            }
+
+            td {
+                padding: 35px
             }
 
             tbody {

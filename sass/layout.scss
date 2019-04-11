@@ -2,6 +2,7 @@ body {
 	width: 100%;
 	height: 100%;
 	color: #000;
+	font-size: 1rem;
 	background-color: $white;
 	font-family: "Open Sans", sans-serif;
 }
@@ -10,24 +11,40 @@ body {
 h2 {
 	font-size: 1.875rem; // 30px
 	font-weight: 700;
+
+	@media (max-width: $max-sm) {
+		font-size: 1.5rem; // 24px 
+	}
 }
 
 .h3,
 h3 {
 	font-size: 1.5rem; // 24px 
 	font-weight: 700;
+
+	@media (max-width: $max-sm) {
+		font-size: 1.25rem; // 20px 
+	}
 }
 
 .h4,
 h4 {
 	font-size: 1.25rem; // 20px 
 	font-weight: 700;
+
+	@media (max-width: $max-sm) {
+		font-size: 1.125rem; // 18px 
+	}
 }
 
 .h5,
 h5 {
 	font-size: 1.125rem; // 18px 
 	font-weight: 700;
+
+	@media (max-width: $max-sm) {
+		font-size: 1rem; // 16px 
+	}
 }
 
 a {
@@ -43,6 +60,13 @@ a {
 	max-width: 1730px;
 	margin: 0 auto;
 	box-sizing: border-box;
+}
+
+// card-box
+
+.card-box {
+	box-shadow: $box-shadow;
+    padding: 40px 60px;
 }
 
 // breadcrumb
@@ -153,4 +177,69 @@ a {
 			background: $blue;
 		}
 	}
+}
+
+// comment
+.comment {
+    font-size: 0.75rem; // 12px
+    color: $grey;
+    padding: 5px 0 15px 0;
+}
+
+// condition
+.condition {
+    font-size: 0.875rem; // 14px;
+    font-weight: 300;
+    color: $dark-grey;
+    margin-bottom: 50px;
+}
+
+// table-responsive
+.table-responsive {
+    width: 100%;
+    box-shadow: $box-shadow;
+    overflow-x: auto;
+    padding: 40px 60px;
+    margin: 40px 0;
+
+    @media (max-width: $max-xs) {
+        padding: 20px;
+    }
+
+    .table {
+        width: 100%;
+        min-width: $max-sm;
+
+        th {
+            border-top: transparent;
+            vertical-align: top;
+            padding: 0 150px 35px 20px;
+
+            @media (max-width: $max-lg) {
+                padding: 0 20px 35px 20px;
+            }
+
+            @media (max-width: $max-xs) {
+                padding: 20px;
+            }
+        }
+
+        td {
+            padding: 35px 150px 35px 20px;
+
+            @media (max-width: $max-lg) {
+                padding: 35px 20px 35px 20px;
+            }
+
+            @media (max-width: $max-xs) {
+                padding: 20px;
+            }
+        }
+
+    }
+}
+
+// only
+.only {
+    font-weight: 700;
 }
