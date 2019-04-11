@@ -62,6 +62,13 @@ a {
 	box-sizing: border-box;
 }
 
+// input
+
+.col-form-label {
+	font-size: 1.125rem; // 18px 
+	font-weight: 600;
+}
+
 // checkbox
 .checkbox {
     display: flex;
@@ -201,6 +208,10 @@ a {
 
 .btn-primary {
     background: $blue;
+}
+
+.btn .btn-light {
+	background: $light-blue;
 }
 
 // title-mark

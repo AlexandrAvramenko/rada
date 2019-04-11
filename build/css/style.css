@@ -77,6 +77,11 @@ a:hover {
     box-sizing: border-box;
 }
 
+.col-form-label {
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
 .checkbox {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -225,6 +230,10 @@ a:hover {
 
 .btn-primary {
     background: #216f9f;
+}
+
+.btn .btn-light {
+    background: #ebf2f9;
 }
 
 .title-mark {
@@ -1178,6 +1187,19 @@ a:hover {
 .card-zakonoproektu #tabs .card-box {
     text-align: center;
     margin-top: 40px;
+}
+
+.search-box .buttons {
+    margin: 40px 0;
+}
+
+.search-box .buttons .btn {
+    min-width: 220px;
+}
+
+.search-box .link-blue {
+    font-size: 1.125rem;
+    font-weight: 400;
 }
 
 .footer {
