@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/style.css">
 
     <title></title>
+
 </head>
 
 <body>
@@ -23,7 +24,7 @@
     <div class="header">
         <div class="container">
             <nav class="navbar navbar-expand-xl navbar-light">
-                <a href="#" class="navbar-brand">Законотворчість</a>
+                <a href="index.html" class="navbar-brand">Законотворчість</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -32,21 +33,22 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item dropdown show">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="zakonoproekty.html" id="navbarDropdown"
+                                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Законопроекти
                                 <span class="sr-only">(current)</span>
                             </a>
-                            <div class="dropdown-menu show" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Пошук за реквізитами</a>
-                                <a class="dropdown-item" href="#">Правила оформлення проектів...</a>
-                                <a class="dropdown-item" href="#">Зареєстровані за поточний тиждень</a>
-                                <a class="dropdown-item" href="#">Надано народним депутатам</a>
-                                <a class="dropdown-item" href="#">Знаходяться на розгляді в комітетах</a>
-                                <a class="dropdown-item" href="#">Прийнято на поточні сесії</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="poshuk-za-rekvizytamy.html">Пошук за реквізитами</a>
+                                <a class="dropdown-item" href="pravyla-oformlennya-proektiv-zakoniv.html">Правила оформлення проектів...</a>
+                                <a class="dropdown-item" href="zakonoproekty-za-potochnyy-tyzhden.html">Зареєстровані за поточний тиждень</a>
+                                <a class="dropdown-item" href="nadano-narodnym-deputatam.html">Надано народним депутатам</a>
+                                <a class="dropdown-item" href="zakonoproekty-shcho-znakhodyatʹsya-na-opratsyuvanni-v-komitetakh.html">Знаходяться на розгляді в комітетах</a>
+                                <a class="dropdown-item" href="pryynyati-na-potochniy-sesiyi.html">Прийнято на поточні сесії</a>
                             </div>
                         </li>
+
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -90,103 +92,84 @@
 	<nav aria-label="breadcrumb">
 		<ol class="breadcrumb">
 			<li class="breadcrumb-item"><a href="#">Головна</a></li>
-			<li class="breadcrumb-item active" aria-current="page">Пошук за реквізитами(розширенний)</li>
+			<li class="breadcrumb-item"><a href="#">Законопроекти</a></li>
+			<li class="breadcrumb-item active" aria-current="page">Знаходяться на розгляді в комітетах</li>
 		</ol>
 	</nav>
 
-	<div class="search-box mb_100">
-
-		<div class="form-group row">
-			<label for="colFormLabelLg" class="col-sm-3 col-form-label">Сесія розгляду:</label>
-			<div class="col-xl-6 col">
-				<select class="form-control form-control-lg">
-					<option>Всі сесії VII скликання</option>
-					<option>Всі сесії VII скликання</option>
-					<option>Всі сесії VII скликання</option>
-					<option>Всі сесії VII скликання</option>
-					<option>Всі сесії VII скликання</option>
-				</select>
-			</div>
+	<div class="in-progress">
+		<h2 class="h2">Законопроекти, що знаходяться на опрацюванні в комітетах Верховної Ради України</h2>
+		<div class="box-condition">
+			<p class="condition">Станом на 26.02.2019<br />(поновлюється щодобово)</p>
+			<a href="#" class="link-blue">Всі законопроекти, які направлялись на опрацювання в комітети</a>
 		</div>
 
-		<div class="form-group row">
-			<label for="colFormLabelLg" class="col-sm-3 col-form-label">№ реєстрацiї</label>
-			<div class="col col-xl-6">
-				<div class="row">
-					<div class="col">
-						<select class="form-control form-control-lg">
-							<option>Містить</option>
-							<option>Містить</option>
-							<option>Містить</option>
-							<option>Містить</option>
-							<option>Містить</option>
-						</select>
-					</div>
-					<div class="col">
-						<select class="form-control form-control-lg">
-							<option> </option>
-							<option> </option>
-							<option> </option>
-							<option> </option>
-							<option> </option>
-						</select>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-		<div class="form-group row">
-			<label for="colFormLabelLg" class="col-sm-3 col-form-label">№ реєстрацiї</label>
-			<div class="col col-xl-6">
-				<div class="row">
-					<div class="col">
-						<input type="email" class="form-control form-control-lg" placeholder="20 груд 2018">
-					</div>
-					<div class="col">
-						<input type="email" class="form-control form-control-lg" placeholder="20 січ 2019">
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="form-group row">
-			<label for="colFormLabelLg" class="col-sm-3 col-form-label">Назва (слова з назви):</label>
-			<div class="col col-xl-6">
-				<input type="email" class="form-control form-control-lg" id="colFormLabelLg"
-					placeholder="Законотворчіс">
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="col-12 col-md-3 font-weight-bold"></div>
-			<div class="col col-md-6">
-				<div class="checkbox">
-					<div class="form-group">
-						<input type="checkbox" id="checkbox-1">
-						<label for="checkbox-1">Результат в новому вікні</label>
-					</div>
-					<div class="form-group">
-						<input type="checkbox" id="checkbox-2" checked>
-						<label for="checkbox-2">Детальний перелік</label>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="col-12 col-md-3 font-weight-bold"></div>
-			<div class="col col-md-6">
-				<div class="buttons">
-					<button type="button" class="btn btn-primary btn-lg rounded-0">Пошук</button>
-					<button type="button" class="btn btn-light btn-lg rounded-0">Очистити</button>
-					<a href="#" class="link-blue ml-auto">Допомога</a>
-				</div>
-				<a href="#" class="link-blue">Перейти до розширенної форми пошуку</a>
-			</div>
+		<div class="table-responsive">
+			<table class="table table-hover">
+				<thead>
+					<tr>
+						<th class="border-0">Назва комітету Верховної Ради України</th>
+						<th colspan="2" class="border-0 text-center">Кількість законопроектів</th>
+					</tr>
+					<tr>
+						<th></th>
+						<th class="text-nowrap">Головний виконавець</th>
+						<th>Всього</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Комітет з питань аграрної політики та земельних відносин</td>
+						<td><a href="#" class="link-blue">174</a></td>
+						<td><a href="#" class="link-blue">470</a></td>
+					</tr>
+					<tr>
+						<td>Комітет з питань будівництва, містобудування і житлово-комунального господарства</td>
+						<td><a href="#" class="link-blue">114</a></td>
+						<td><a href="#" class="link-blue">359</a></td>
+					</tr>
+					<tr>
+						<td>Комітет з питань бюджету</td>
+						<td><a href="#" class="link-blue">135</a></td>
+						<td><a href="#" class="link-blue">3652</a></td>
+					</tr>
+					<tr>
+						<td>Комітет з питань державного будівництва, регіональної політики та місцевого
+							самоврядування </td>
+						<td><a href="#" class="link-blue">391</a></td>
+						<td><a href="#" class="link-blue">860</a></td>
+					</tr>
+					<tr>
+						<td>Комітет з питань екологічної політики, природокористування та ліквідації наслідків
+							Чорнобильської катастрофи</td>
+						<td><a href="#" class="link-blue">239</a></td>
+						<td><a href="#" class="link-blue">481</a></td>
+					</tr>
+					<tr>
+						<td>Комітет з питань будівництва, містобудування і житлово-комунального господарства</td>
+						<td><a href="#" class="link-blue">114</a></td>
+						<td><a href="#" class="link-blue">359</a></td>
+					</tr>
+					<tr>
+						<td>Комітет з питань бюджету</td>
+						<td><a href="#" class="link-blue">135</a></td>
+						<td><a href="#" class="link-blue">3652</a></td>
+					</tr>
+					<tr>
+						<td>Комітет з питань державного будівництва, регіональної політики та місцевого
+							самоврядування </td>
+						<td><a href="#" class="link-blue">391</a></td>
+						<td><a href="#" class="link-blue">860</a></td>
+					</tr>
+					<tr class="font-weight-bold">
+						<td>Всього на опрацюванні</td>
+						<td>4978</td>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>
 		</div>
 	</div>
-
-
 </div>
 
 <div class="footer">

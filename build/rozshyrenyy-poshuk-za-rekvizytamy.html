@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/style.css">
 
     <title></title>
+
 </head>
 
 <body>
@@ -23,7 +24,7 @@
     <div class="header">
         <div class="container">
             <nav class="navbar navbar-expand-xl navbar-light">
-                <a href="#" class="navbar-brand">Законотворчість</a>
+                <a href="index.html" class="navbar-brand">Законотворчість</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -32,21 +33,22 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item dropdown show">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="zakonoproekty.html" id="navbarDropdown"
+                                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Законопроекти
                                 <span class="sr-only">(current)</span>
                             </a>
-                            <div class="dropdown-menu show" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Пошук за реквізитами</a>
-                                <a class="dropdown-item" href="#">Правила оформлення проектів...</a>
-                                <a class="dropdown-item" href="#">Зареєстровані за поточний тиждень</a>
-                                <a class="dropdown-item" href="#">Надано народним депутатам</a>
-                                <a class="dropdown-item" href="#">Знаходяться на розгляді в комітетах</a>
-                                <a class="dropdown-item" href="#">Прийнято на поточні сесії</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="poshuk-za-rekvizytamy.html">Пошук за реквізитами</a>
+                                <a class="dropdown-item" href="pravyla-oformlennya-proektiv-zakoniv.html">Правила оформлення проектів...</a>
+                                <a class="dropdown-item" href="zakonoproekty-za-potochnyy-tyzhden.html">Зареєстровані за поточний тиждень</a>
+                                <a class="dropdown-item" href="nadano-narodnym-deputatam.html">Надано народним депутатам</a>
+                                <a class="dropdown-item" href="zakonoproekty-shcho-znakhodyatʹsya-na-opratsyuvanni-v-komitetakh.html">Знаходяться на розгляді в комітетах</a>
+                                <a class="dropdown-item" href="pryynyati-na-potochniy-sesiyi.html">Прийнято на поточні сесії</a>
                             </div>
                         </li>
+
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -90,7 +92,7 @@
 	<nav aria-label="breadcrumb">
 		<ol class="breadcrumb">
 			<li class="breadcrumb-item"><a href="#">Головна</a></li>
-			<li class="breadcrumb-item active" aria-current="page">Пошук за реквізитами</li>
+			<li class="breadcrumb-item active" aria-current="page">Пошук за реквізитами(розширенний)</li>
 		</ol>
 	</nav>
 
@@ -136,7 +138,7 @@
 		</div>
 		
 		<div class="form-group row">
-			<label for="colFormLabelLg" class="col-sm-3 col-form-label">№ реєстрацiї</label>
+			<label for="colFormLabelLg" class="col-sm-3 col-form-label">Дата реєстрацiї</label>
 			<div class="col col-xl-6">
 				<div class="row">
 					<div class="col">
@@ -154,6 +156,205 @@
 			<div class="col col-xl-6">
 				<input type="email" class="form-control form-control-lg" id="colFormLabelLg"
 					placeholder="Законотворчіс">
+			</div>
+		</div>
+
+		<div class="form-group row mb-5">
+			<label for="colFormLabelLg" class="col-sm-3 col-form-label">Автор народний депутат України:</label>
+			<div class="col col-xl-6">
+				<input type="email" class="form-control form-control-lg" id="colFormLabelLg"
+					placeholder="">
+			</div>
+		</div>
+
+		<div class="form-group row">
+			<label for="colFormLabelLg" class="col-sm-3 col-form-label">Профільний комітет:</label>
+			<div class="col-xl-6 col">
+				<select class="form-control form-control-lg">
+					<option>Не визначено</option>
+					<option>Не визначено</option>
+					<option>Не визначено</option>
+					<option>Не визначено</option>
+					<option>Не визначено</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="form-group row">
+			<label for="colFormLabelLg" class="col-sm-3 col-form-label">Статус профільного комітету:</label>
+			<div class="col-xl-3 col">
+				<select class="form-control form-control-lg">
+					<option>Не визначено</option>
+					<option>Не визначено</option>
+					<option>Не визначено</option>
+					<option>Не визначено</option>
+					<option>Не визначено</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="form-group row mb-5">
+			<label for="colFormLabelLg" class="col-sm-3 col-form-label">Депутатська фракція:</label>
+			<div class="col-xl-6 col">
+				<select class="form-control form-control-lg">
+					<option>Не визначено</option>
+					<option>Не визначено</option>
+					<option>Не визначено</option>
+					<option>Не визначено</option>
+					<option>Не визначено</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="form-group row">
+			<label for="colFormLabelLg" class="col-sm-3 col-form-label">Стан законопроекту:</label>
+			<div class="col-xl-3 col">
+				<select class="form-control form-control-lg">
+					<option>Не визначено</option>
+					<option>Не визначено</option>
+					<option>Не визначено</option>
+					<option>Не визначено</option>
+					<option>Не визначено</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="form-group row">
+			<label for="colFormLabelLg" class="col-sm-3 col-form-label">Ознака діючого закону:</label>
+			<div class="col-xl-3 col">
+				<select class="form-control form-control-lg">
+					<option>Не визначено</option>
+					<option>Не визначено</option>
+					<option>Не визначено</option>
+					<option>Не визначено</option>
+					<option>Не визначено</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="form-group row">
+			<label for="colFormLabelLg" class="col-sm-3 col-form-label">№ нормативного акта містить:</label>
+			<div class="col col-xl-3">
+				<input type="email" class="form-control form-control-lg" id="colFormLabelLg"
+					placeholder="" disabled>
+			</div>
+		</div>
+
+		<div class="form-group row mb-5">
+			<label for="colFormLabelLg" class="col-sm-3 col-form-label">Висновок Головного науково-
+				експертного управління:	</label>
+			<div class="col-xl-3 col">
+				<select class="form-control form-control-lg">
+					<option>Не визначено</option>
+					<option>Не визначено</option>
+					<option>Не визначено</option>
+					<option>Не визначено</option>
+					<option>Не визначено</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="form-group row">
+			<label for="colFormLabelLg" class="col-sm-3 col-form-label">Суб'єкт права законодавчої ініціативи:</label>
+			<div class="col-xl-6 col">
+				<select class="form-control form-control-lg">
+					<option>Не визначено</option>
+					<option>Не визначено</option>
+					<option>Не визначено</option>
+					<option>Не визначено</option>
+					<option>Не визначено</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="form-group row">
+			<label for="colFormLabelLg" class="col-sm-3 col-form-label">Tип проекту:</label>
+			<div class="col-xl-6 col">
+				<select class="form-control form-control-lg">
+					<option>Не визначено</option>
+					<option>Не визначено</option>
+					<option>Не визначено</option>
+					<option>Не визначено</option>
+					<option>Не визначено</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="form-group row">
+			<label for="colFormLabelLg" class="col-sm-3 col-form-label">Tип законопроекту:</label>
+			<div class="col-xl-6 col">
+				<select class="form-control form-control-lg">
+					<option>Не визначено</option>
+					<option>Не визначено</option>
+					<option>Не визначено</option>
+					<option>Не визначено</option>
+					<option>Не визначено</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="form-group row">
+			<label for="colFormLabelLg" class="col-sm-3 col-form-label">Вид законопроекту:</label>
+			<div class="col-xl-6 col">
+				<select class="form-control form-control-lg">
+					<option>Не визначено</option>
+					<option>Не визначено</option>
+					<option>Не визначено</option>
+					<option>Не визначено</option>
+					<option>Не визначено</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="form-group row">
+			<label for="colFormLabelLg" class="col-sm-3 col-form-label">Редакція законопроекту:</label>
+			<div class="col-xl-6 col">
+				<select class="form-control form-control-lg">
+					<option>Не визначено</option>
+					<option>Не визначено</option>
+					<option>Не визначено</option>
+					<option>Не визначено</option>
+					<option>Не визначено</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="form-group row">
+			<label for="colFormLabelLg" class="col-sm-3 col-form-label">Визначено Президентом України:</label>
+			<div class="col-xl-6 col">
+				<select class="form-control form-control-lg">
+					<option>Не визначено</option>
+					<option>Не визначено</option>
+					<option>Не визначено</option>
+					<option>Не визначено</option>
+					<option>Не визначено</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="form-group row mb-5">
+			<label for="colFormLabelLg" class="col-sm-3 col-form-label">Юридичний рубрикатор:</label>
+			<div class="col-xl-6 col">
+				<select class="form-control form-control-lg">
+					<option>Не визначено</option>
+					<option>Не визначено</option>
+					<option>Не визначено</option>
+					<option>Не визначено</option>
+					<option>Не визначено</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="form-group row">
+			<label for="colFormLabelLg" class="col-sm-3 col-form-label">Сортування:</label>
+			<div class="col-xl-6 col">
+				<select class="form-control form-control-lg">
+					<option>За номером реєстрації</option>
+					<option>За номером реєстрації</option>
+					<option>За номером реєстрації</option>
+					<option>За номером реєстрації</option>
+					<option>За номером реєстрації</option>
+				</select>
 			</div>
 		</div>
 
@@ -177,11 +378,11 @@
 			<div class="col-12 col-md-3 font-weight-bold"></div>
 			<div class="col col-md-6">
 				<div class="buttons">
-					<button type="button" class="btn btn-primary btn-lg rounded-0">Пошук</button>
+					<a	href="rezultat-poshuku.html" type="button" class="btn btn-primary btn-lg rounded-0">Пошук</a>
 					<button type="button" class="btn btn-light btn-lg rounded-0">Очистити</button>
 					<a href="#" class="link-blue ml-auto">Допомога</a>
 				</div>
-				<a href="#" class="link-blue">Перейти до розширенної форми пошуку</a>
+				<a href="poshuk-za-rekvizytamy.html" class="link-blue">Перейти до скороченної форми пошуку</a>
 			</div>
 		</div>
 	</div>
