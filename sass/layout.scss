@@ -1,72 +1,72 @@
 body {
-	width: 100%;
-	height: 100%;
-	color: #000;
-	font-size: 1rem;
-	background-color: $white;
-	font-family: "Open Sans", sans-serif;
+    width: 100%;
+    height: 100%;
+    color: #000;
+    font-size: 1rem;
+    background-color: $white;
+    font-family: "Open Sans", sans-serif;
 }
 
 .h2,
 h2 {
-	font-size: 1.875rem; // 30px
-	font-weight: 700;
+    font-size: 1.875rem; // 30px
+    font-weight: 700;
 
-	@media (max-width: $max-sm) {
-		font-size: 1.5rem; // 24px 
-	}
+    @media (max-width: $max-sm) {
+        font-size: 1.5rem; // 24px 
+    }
 }
 
 .h3,
 h3 {
-	font-size: 1.5rem; // 24px 
-	font-weight: 700;
+    font-size: 1.5rem; // 24px 
+    font-weight: 700;
 
-	@media (max-width: $max-sm) {
-		font-size: 1.25rem; // 20px 
-	}
+    @media (max-width: $max-sm) {
+        font-size: 1.25rem; // 20px 
+    }
 }
 
 .h4,
 h4 {
-	font-size: 1.25rem; // 20px 
-	font-weight: 700;
+    font-size: 1.25rem; // 20px 
+    font-weight: 700;
 
-	@media (max-width: $max-sm) {
-		font-size: 1.125rem; // 18px 
-	}
+    @media (max-width: $max-sm) {
+        font-size: 1.125rem; // 18px 
+    }
 }
 
 .h5,
 h5 {
-	font-size: 1.125rem; // 18px 
-	font-weight: 700;
+    font-size: 1.125rem; // 18px 
+    font-weight: 700;
 
-	@media (max-width: $max-sm) {
-		font-size: 1rem; // 16px 
-	}
+    @media (max-width: $max-sm) {
+        font-size: 1rem; // 16px 
+    }
 }
 
 a {
-	color: $black;
+    color: $black;
 
-	&:hover {
-		color: $blue;
-	}
+    &:hover {
+        color: $blue;
+    }
 }
 
 .container {
-	width: 100%;
-	max-width: 1730px;
-	margin: 0 auto;
-	box-sizing: border-box;
+    width: 100%;
+    max-width: 1730px;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 // input
 
 .col-form-label {
-	font-size: 1.125rem; // 18px 
-	font-weight: 700;
+    font-size: 1.125rem; // 18px 
+    font-weight: 700;
 }
 
 .form-control-lg {
@@ -103,23 +103,23 @@ a {
                 border: solid $blue;
                 border-width: 0 2px 2px 0;
                 transform: rotate(45deg);
-            }            
+            }
         }
 
         label {
             position: relative;
             font-size: 0.875rem; //14px
             cursor: pointer;
-            margin: 0 40px 0 0!important;
+            margin: 0 40px 0 0 !important;
 
             &:before {
                 content: '';
                 display: inline-block;
-                position: relative;                
+                position: relative;
                 -webkit-appearance: none;
                 background-color: transparent;
                 border: 1px solid $border-input;
-                border-radius: $border-radius-input;            
+                border-radius: $border-radius-input;
                 vertical-align: middle;
                 cursor: pointer;
                 padding: 10px;
@@ -132,61 +132,61 @@ a {
 // card-box
 
 .card-box {
-	box-shadow: $box-shadow;
+    box-shadow: $box-shadow;
     padding: 40px 60px;
 }
 
 // breadcrumb
 
 .breadcrumb {
-	font-size: 0.75rem; // 12px 
-	background-color: transparent;
-	padding: .75rem 0;
-	margin-bottom: 2.5rem;
+    font-size: 0.75rem; // 12px 
+    background-color: transparent;
+    padding: .75rem 0;
+    margin-bottom: 2.5rem;
 }
 
 // pagination
 .box-pagination {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: 75px 0 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 75px 0 100px;
 
-	.pagination {
-		margin: 0;
+    .pagination {
+        margin: 0;
 
-		.page-link {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			width: 44px;
-			height: 44px;
-			border: transparent;
-			color: $dark;
-			margin: 2px;
-			background: $light-blue;
-			transition: .3s;
+        .page-link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 44px;
+            height: 44px;
+            border: transparent;
+            color: $dark;
+            margin: 2px;
+            background: $light-blue;
+            transition: .3s;
 
-			&:hover {
-				background: $blue;
-				color: $white;
-			}
+            &:hover {
+                background: $blue;
+                color: $white;
+            }
 
-			.previous,
-			.next {
-				font-size: 1.875rem; // 30px
-				line-height: 1;
-				padding-bottom: 5px;
-			}
-		}
+            .previous,
+            .next {
+                font-size: 1.875rem; // 30px
+                line-height: 1;
+                padding-bottom: 5px;
+            }
+        }
 
-	}
+    }
 }
 
 // sizing
 
 .mb_100 {
-	margin-bottom: 100px!important;
+    margin-bottom: 100px !important;
 }
 
 //link-blue
@@ -215,39 +215,39 @@ a {
 }
 
 .btn .btn-light {
-	background: $light-blue;
+    background: $light-blue;
 }
 
 // title-mark
 
 .title-mark {
-	text-align: center;
+    text-align: center;
 
-	.h2 {
-		position: relative;
-		display: inline-flex;
-		margin-bottom: 50px;
+    .h2 {
+        position: relative;
+        display: inline-flex;
+        margin-bottom: 50px;
 
-		&:before {
-			position: absolute;
-			top: 50%;
-			left: -55px;
-			content: "";
-			width: 40px;
-			height: 4px;
-			background: $blue;
-		}
+        &:before {
+            position: absolute;
+            top: 50%;
+            left: -55px;
+            content: "";
+            width: 40px;
+            height: 4px;
+            background: $blue;
+        }
 
-		&:after {
-			position: absolute;
-			top: 50%;
-			right: -55px;
-			content: "";
-			width: 40px;
-			height: 4px;
-			background: $blue;
-		}
-	}
+        &:after {
+            position: absolute;
+            top: 50%;
+            right: -55px;
+            content: "";
+            width: 40px;
+            height: 4px;
+            background: $blue;
+        }
+    }
 }
 
 // comment
@@ -313,4 +313,36 @@ a {
 // only
 .only {
     font-weight: 700;
+}
+
+// table-archive
+
+.table-archive {
+    padding: 20px 60px;
+
+    @media (max-width: $max-xs) {
+        padding: 20px;
+    }
+
+    .table {
+        margin-bottom: 0;
+    }
+
+    tbody {
+        tr {
+            td:first-child {
+                width: 400px;
+
+                @media (max-width: $max-xs) {
+                    width: 300px;
+                }
+            }
+        }
+
+        &:first-child {
+            td {
+                border-top: none;
+            }
+        }
+    }
 }

@@ -343,6 +343,34 @@ a:hover {
     font-weight: 700;
 }
 
+.table-archive {
+    padding: 20px 60px;
+}
+
+@media (max-width: 575.98px) {
+    .table-archive {
+        padding: 20px;
+    }
+}
+
+.table-archive .table {
+    margin-bottom: 0;
+}
+
+.table-archive tbody tr td:first-child {
+    width: 400px;
+}
+
+@media (max-width: 575.98px) {
+    .table-archive tbody tr td:first-child {
+        width: 300px;
+    }
+}
+
+.table-archive tbody:first-child td {
+    border-top: none;
+}
+
 .header-main {
     background-image: -webkit-linear-gradient(90deg, #2075a9 0%, #2087c1 100%);
     background-image: -ms-linear-gradient(90deg, #2075a9 0%, #2087c1 100%);
@@ -1232,6 +1260,43 @@ a:hover {
         text-align: center;
         margin-right: 0;
     }
+}
+
+.holding-hearings .links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.holding-hearings .links .link-blue {
+    margin-bottom: 20px;
+}
+
+.holding-hearings .table-responsive .table th {
+    padding: 0 35px 20px;
+}
+
+@media (max-width: 1199.98px) {
+    .holding-hearings .table-responsive .table th {
+        padding: 20px;
+    }
+}
+
+.holding-hearings .table-responsive .table td {
+    padding: 35px;
+}
+
+.holding-hearings .table-responsive .table tbody tr td:first-child {
+    white-space: nowrap;
+}
+
+.holding-hearings .table-responsive .table tbody tr td:nth-child(3) {
+    min-width: 450px;
 }
 
 .footer {
