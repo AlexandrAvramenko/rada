@@ -79,7 +79,11 @@ a:hover {
 
 .col-form-label {
     font-size: 1.125rem;
-    font-weight: 600;
+    font-weight: 700;
+}
+
+.form-control-lg {
+    background: #faf8f8;
 }
 
 .checkbox {
@@ -1190,16 +1194,44 @@ a:hover {
 }
 
 .search-box .buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     margin: 40px 0;
+}
+
+@media (max-width: 575.98px) {
+    .search-box .buttons {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
 }
 
 .search-box .buttons .btn {
     min-width: 220px;
+    margin-bottom: 20px;
+    margin-right: 20px;
 }
 
 .search-box .link-blue {
     font-size: 1.125rem;
     font-weight: 400;
+    padding: 1.125rem 0;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 575.98px) {
+    .search-box .link-blue {
+        width: 100%;
+        text-align: center;
+        margin-right: 0;
+    }
 }
 
 .footer {

@@ -90,92 +90,103 @@
 	<nav aria-label="breadcrumb">
 		<ol class="breadcrumb">
 			<li class="breadcrumb-item"><a href="#">Головна</a></li>
-			<li class="breadcrumb-item"><a href="#">Пошук за реквізитами</a></li>
-			<li class="breadcrumb-item active" aria-current="page">Результат пошуку</li>
+			<li class="breadcrumb-item active" aria-current="page">Пошук за реквізитами</li>
 		</ol>
 	</nav>
 
-	<h2 class="h2">Результати пошуку законопроектiв, зареєстрованих Верховною Радою України</h2>
-	<p class="condition">Знайдено законопроектів: 13114</p>
+	<div class="search-box mb_100">
 
-	<div class="search-criteria">
-		<div><b>Критерії пошуку: </b>Проекти, зареєстровані за всі сесії VIII скликання</div>
-		<div class="form-group">
-			<label for="exampleFormControlSelect1">Законопроектів на сторінці</label>
-			<select class="form-control" id="exampleFormControlSelect1">
-				<option>10</option>
-				<option>20</option>
-				<option>30</option>
-				<option>40</option>
-				<option>50</option>
-			</select>
+		<div class="form-group row">
+			<label for="colFormLabelLg" class="col-sm-3 col-form-label">Сесія розгляду:</label>
+			<div class="col-xl-6 col">
+				<select class="form-control form-control-lg">
+					<option>Всі сесії VII скликання</option>
+					<option>Всі сесії VII скликання</option>
+					<option>Всі сесії VII скликання</option>
+					<option>Всі сесії VII скликання</option>
+					<option>Всі сесії VII скликання</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="form-group row">
+			<label for="colFormLabelLg" class="col-sm-3 col-form-label">№ реєстрацiї</label>
+			<div class="col col-xl-6">
+				<div class="row">
+					<div class="col">
+						<select class="form-control form-control-lg">
+							<option>Містить</option>
+							<option>Містить</option>
+							<option>Містить</option>
+							<option>Містить</option>
+							<option>Містить</option>
+						</select>
+					</div>
+					<div class="col">
+						<select class="form-control form-control-lg">
+							<option> </option>
+							<option> </option>
+							<option> </option>
+							<option> </option>
+							<option> </option>
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="form-group row">
+			<label for="colFormLabelLg" class="col-sm-3 col-form-label">№ реєстрацiї</label>
+			<div class="col col-xl-6">
+				<div class="row">
+					<div class="col">
+						<input type="email" class="form-control form-control-lg" placeholder="20 груд 2018">
+					</div>
+					<div class="col">
+						<input type="email" class="form-control form-control-lg" placeholder="20 січ 2019">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="form-group row">
+			<label for="colFormLabelLg" class="col-sm-3 col-form-label">Назва (слова з назви):</label>
+			<div class="col col-xl-6">
+				<input type="email" class="form-control form-control-lg" id="colFormLabelLg"
+					placeholder="Законотворчіс">
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-12 col-md-3 font-weight-bold"></div>
+			<div class="col col-md-6">
+				<div class="checkbox">
+					<div class="form-group">
+						<input type="checkbox" id="checkbox-1">
+						<label for="checkbox-1">Результат в новому вікні</label>
+					</div>
+					<div class="form-group">
+						<input type="checkbox" id="checkbox-2" checked>
+						<label for="checkbox-2">Детальний перелік</label>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-12 col-md-3 font-weight-bold"></div>
+			<div class="col col-md-6">
+				<div class="buttons">
+					<button type="button" class="btn btn-primary btn-lg rounded-0">Пошук</button>
+					<button type="button" class="btn btn-light btn-lg rounded-0">Очистити</button>
+					<a href="#" class="link-blue ml-auto">Допомога</a>
+				</div>
+				<a href="#" class="link-blue">Перейти до розширенної форми пошуку</a>
+			</div>
 		</div>
 	</div>
 
-	<div class="table-responsive mt-0">
-		<table class="table table-hover">
-			<thead>
-				<tr>
-					<th>Номер реєстрацiї</th>
-					<th>Дата реєстрації</th>
-					<th>Назва<br /> законопроекту</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td><a href="#" class="link-blue">0001</a></td>
-					<td>01.12.2014</td>
-					<td>Проект Закону про денонсацію Угоди між Урядом Союзу Радянських Соціалістичних Республік і
-						Урядом Республіки Кіпр про уникнення подвійного оподаткування доходів та майна від 29 жовтня
-						1982 року</td>
-				</tr>
-				<tr>
-					<td><a href="#" class="link-blue">0001/П</a></td>
-					<td>28.12.2014</td>
-					<td>Проект Постанови про відхилення проекту Закону України про денонсацію Угоди між Урядом Союзу
-						Радянських Соціалістичних Республік і Урядом Республіки Кіпр про уникнення подвійного
-						оподаткування доходів та майна від 29 жовтня 1982 року</td>
-				</tr>
-				<tr>
-					<td><a href="#" class="link-blue">0001-1</a></td>
-					<td>02.12.2014</td>
-					<td>Проект Закону про денонсацію Конвенції між Урядом України і Урядом Республіки Кіпр про
-						уникнення подвійного оподаткування та запобігання податковим ухиленням стосовно податків на
-						доходи та Протоколу до неї</td>
-				</tr>
-				<tr>
-					<td><a href="#" class="link-blue">0001-1П</a></td>
-					<td>28.12.2014</td>
-					<td>Проект Постанови про повернення на доопрацювання проекту Закону України про денонсацію
-						Конвенції між Урядом України і Урядом Республіки Кіпр про уникнення подвійного оподаткування
-						та запобігання податковим ухиленням стосовно податків на доходи та Протоколу до неї</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
 
-
-	<nav aria-label="navigation" class="box-pagination">
-		<ul class="pagination">
-			<li class="page-item">
-				<a class="page-link" href="#" aria-label="Previous">
-					<span aria-hidden="true" class="previous">&lsaquo;</span>
-				</a>
-			</li>
-			<li class="page-item"><a class="page-link" href="#">1</a></li>
-			<li class="page-item d-none d-sm-block"><a class="page-link" href="#">2</a></li>
-			<li class="page-item d-none d-sm-block"><a class="page-link" href="#">3</a></li>
-			<li class="page-item"><a class="page-link" href="#">...</a></li>
-			<li class="page-item d-none d-sm-block"><a class="page-link" href="#">10</a></li>
-			<li class="page-item d-none d-sm-block"><a class="page-link" href="#">20</a></li>
-			<li class="page-item"><a class="page-link" href="#">30</a></li>
-			<li class="page-item">
-				<a class="page-link" href="#" aria-label="Next">
-					<span aria-hidden="true" class="next">&rsaquo;</span>
-				</a>
-			</li>
-		</ul>
-	</nav>
 </div>
 
 <div class="footer">
