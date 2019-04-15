@@ -7,4 +7,8 @@ $(document).ready(function () {
            location.href = this.href;
          }
        });
+
+    $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
 });

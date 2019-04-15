@@ -384,6 +384,10 @@ a:hover {
     padding: 35px 20px 35px 20px;
 }
 
+.table-archive-extended .table td .link-blue {
+    white-space: nowrap;
+}
+
 .table-without-thead {
     padding: 20px 60px;
 }
@@ -1371,6 +1375,36 @@ a:hover {
 
 .tenth-session .h2 {
     max-width: 1015px;
+}
+
+.tenth-session .box-condition {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.tenth-session .box-condition .link {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #216f9f !important;
+}
+
+.tenth-session .box-condition .link .icon-info {
+    position: relative;
+    top: -10px;
+    padding: 2px;
+}
+
+.tenth-session .box-condition .tooltip .top .tooltip-inner {
+    max-width: 310px;
+    padding: 3px 8px;
+    color: #000;
+    text-align: center;
+    background-color: red;
+    border-radius: 5px;
 }
 
 .footer {
