@@ -1,4 +1,4 @@
-/* sitebar */
+// sitebar
 
 .sitebar {
 	padding-top: 170px;
@@ -27,7 +27,7 @@
 	}
 }
 
-/* card */
+// card
 
 .card {
 	border: transparent;
@@ -62,104 +62,17 @@
 				font-size: 1.125rem;	// 18px 
 				font-weight: 700;
 				line-height: 1;
-				color: $grey;
+				color: $black-50;
 			}
 		}
 
 		.card-text {
-			color: $dark-grey;
+			color: $black-80;
 		}
 	}
 }
 
-/* category */
-
-.category {
-	margin: 100px auto;
-
-	.card {
-		min-width: 360px;
-
-		@media (max-width: $max-xs) {
-			min-width: 260px;
-		}
-
-		.h3 {
-			text-align: center;
-		}
-
-		.more {
-			display: none;
-			font-size: 1.5rem;	// 24px 
-			color: $blue;
-
-		}
-
-		&:hover .overlay,
-		&:hover .more {
-			display: flex;
-			align-items: center;
-		}
-
-		&:hover .h3 {
-			display: none;
-		}
-
-		&:hover .card-body {
-			margin: 5px 0;
-		}
-	}
-
-	.card-img {
-		position: relative;
-		outline: 1px solid $white;
-		outline-offset: -15px;
-		overflow: hidden;
-
-		img {
-			width: 100%;
-			max-height: 317px;
-			object-fit: cover;
-		}
-
-		.text {
-			position: absolute;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			width: 100px;
-			height: 100%;
-			z-index: 100
-		}
-
-		.overlay {
-			display: none;
-			position: absolute;
-			top: 0;
-			left: 0;
-			justify-content: center;
-			align-items: center;
-			width: 100%;
-			height: 100%;
-			font-size: 1.875rem;	// 30px
-			font-weight: 700;
-			color: $white;
-			background: rgba(33, 111, 159, .5);
-			transition: .3s;
-		}
-
-		@media (max-width: $max-xs) {
-			max-height: 250px;
-		}
-	}
-
-	.card-body {
-		align-items: center;
-	}
-
-}
-
-/* news */
+// news
 
 .news {
 	margin-bottom: 100px;
@@ -168,11 +81,11 @@
 	}	
 
 	.card-text {
-		color: $grey;
+		color: $black-50;
 	}
 
 	.more {
 		font-weight: 600;
-		color: $dark-grey;
+		color: $black-80;
 	}
 }

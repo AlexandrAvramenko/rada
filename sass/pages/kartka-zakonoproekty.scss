@@ -7,7 +7,7 @@
     .info {
         max-width: 1100px;
         font-size: 1.125rem; // 18px 
-        color: $dark-grey;
+        color: $black-80;
         margin: 40px 0;
 
         .row {
@@ -36,7 +36,7 @@
                 width: 100%;
                 min-width: 270px;
                 height: 56px;
-                border-bottom: 2px solid $grey;
+                border-bottom: 2px solid $black-50;
                 margin: 0 4px;
 
                 &:hover {
@@ -59,7 +59,7 @@
                 text-decoration: none;
 
                 &:hover {
-                    border-bottom: 2px solid $grey;
+                    border-bottom: 2px solid $black-50;
                 }
             }
         }
