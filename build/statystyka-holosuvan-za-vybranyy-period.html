@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title></title>
+
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-xl navbar-light">
+                <a href="index.html" class="navbar-brand">Законотворчість</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="zakonoproekty.html" id="navbarDropdown"
+                                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Законопроекти
+                                <span class="sr-only">(current)</span>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="poshuk-za-rekvizytamy.html">Пошук за реквізитами</a>
+                                <a class="dropdown-item" href="pravyla-oformlennya-proektiv-zakoniv.html">Правила оформлення проектів...</a>
+                                <a class="dropdown-item" href="zakonoproekty-za-potochnyy-tyzhden.html">Зареєстровані за поточний тиждень</a>
+                                <a class="dropdown-item" href="nadano-narodnym-deputatam.html">Надано народним депутатам</a>
+                                <a class="dropdown-item" href="zakonoproekty-na-opratsyuvanni-v-komitetakh.html">Знаходяться на розгляді в комітетах</a>
+                                <a class="dropdown-item" href="pryynyati-na-potochniy-sesiyi.html">Прийнято на поточні сесії</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Пленарні засідання
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Планування та порядок розгляду питань</a>
+                                <a class="dropdown-item" href="#">Погоджувальні ради розгляд</a>
+                                <a class="dropdown-item" href="#">Питань порядку денного</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Парламентські слухання
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="provedennya-parlamentskykh-slukhan.html">Проведення парламентських слухань</a>
+                                <a class="dropdown-item" href="materialy-parlamentskykh-slukhan.html">Хроніка парламентських слухань</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <form class="form-inline">
+                        <input class="form-control" type="search" placeholder="Пошук по сайту" aria-label="Search">
+                        <button class="btn btn-light my-2 my-lg-0" type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                    <div class="social-block">
+                        <i class="fab fa-youtube"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-facebook-square"></i>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+<div class="container">
+
+	<nav aria-label="breadcrumb">
+		<ol class="breadcrumb">
+			<li class="breadcrumb-item"><a href="#">Головна</a></li>
+			<li class="breadcrumb-item active" aria-current="page">Статистика голосувань за вибраний період</li>
+		</ol>
+	</nav>
+
+	<div class="statystyka-holosuvan mb_100">
+		<h2 class="h2">Для висвітлення статистики голосувань народних депутатів виберіть часовий інтервал.
+			Чим більший часовий інтервал, тим довший час генерації сторінки та її обсяг.</h2>
+
+		<div class="filter">
+			<div class="form-group row">
+				<div class="col-sm-12 col-lg-5">
+					<div class=" row">
+						<label for="colFormLabelLg" class="col-xs-12 col-form-label">Дата з</label>
+						<div class="col col-md-12 col-lg-9">
+							<input type="email" class="form-control form-control-lg" placeholder="20 груд 2018">
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 col-lg-5">
+					<div class="row">
+						<label for="colFormLabelLg" class="col-xs-12 col-form-label">до</label>
+						<div class="col col-md-12 col-lg-9">
+							<input type="email" class="form-control form-control-lg" placeholder="20 груд 2018">
+						</div>
+					</div>
+				</div>
+				<div class="col col-sm-2">
+					<button type="button" class="btn btn-primary btn-lg rounded-0 ">Показати</button>
+				</div>
+			</div>
+		</div>
+
+
+		<div id="tabs" class="mt_60">
+			<div class="nav" id="nav-tab" role="tablist">
+				<a class="nav-link active" id="nav-tab1-tab" data-toggle="tab" href="#nav-tab1" role="tab"
+					aria-controls="nav-tab1" aria-selected="true">За алфавітом</a>
+				<a class="nav-link" id="nav-tab2-tab" data-toggle="tab" href="#nav-tab2" role="tab"
+					aria-controls="nav-tab2" aria-selected="false">Зростання активності</a>
+				<a class="nav-link" id="nav-tab3-tab" data-toggle="tab" href="#nav-tab3" role="tab"
+					aria-controls="nav-tab3" aria-selected="false">Спадання активності</a>
+			</div>
+			<div class="links">
+				<a href="file.pdf" class="link-blue">Відкрити в новій вкладці</a>
+			</div>
+			<div class="tab-content px-3 px-sm-0" id="nav-tabContent">
+				<div class="tab-pane fade show active" id="nav-tab1" role="tabpanel" aria-labelledby="nav-tab1-tab">
+					<div class="table-responsive mt-0">
+						<table class="table table-hover">
+							<thead>
+								<tr>
+									<th>№</th>
+									<th>Депутат</th>
+									<th>Початок повноважень</th>
+									<th>Припинення повноважень</th>
+									<th>Голосував</th>
+									<th>Голосував(%)</th>
+									<th>Не голосував</th>
+									<th>Відсутній</th>
+									<th>Всього</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td class="name">Абдуллін О.Р.</td>
+									<td>27.11.2014</td>
+									<td></td>
+									<td>5919</td>
+									<td>36,03%</td>
+									<td>4750</td>
+									<td>5757</td>
+									<td>16426</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td class="name">Аваков А.Б.</td>
+									<td>27.11.2014</td>
+									<td>02.12.2014</td>
+									<td>11</td>
+									<td>45,83%</td>
+									<td>1</td>
+									<td>12</td>
+									<td>24</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td class="name">Агафонова Н.В.</td>
+									<td>27.11.2014</td>
+									<td>02.12.2014</td>
+									<td>2454</td>
+									<td>15,78%</td>
+									<td>8437</td>
+									<td>4665</td>
+									<td>15556</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td class="name">Алексєєв І.С.</td>
+									<td>27.11.2014</td>
+									<td></td>
+									<td>10132</td>
+									<td>61,68%</td>
+									<td>5556</td>
+									<td>738</td>
+									<td>16426</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="nav-tab2" role="tabpanel" aria-labelledby="nav-tab2-tab">
+					<div class="table-responsive mt-0">
+						<table class="table table-hover">
+							<thead>
+								<tr>
+									<th>№</th>
+									<th>Депутат</th>
+									<th>Початок повноважень</th>
+									<th>Припинення повноважень</th>
+									<th>Голосував</th>
+									<th>Голосував(%)</th>
+									<th>Не голосував</th>
+									<th>Відсутній</th>
+									<th>Всього</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td class="name">Абдуллін О.Р.</td>
+									<td>27.11.2014</td>
+									<td></td>
+									<td>5919</td>
+									<td>36,03%</td>
+									<td>4750</td>
+									<td>5757</td>
+									<td>16426</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td class="name">Аваков А.Б.</td>
+									<td>27.11.2014</td>
+									<td>02.12.2014</td>
+									<td>11</td>
+									<td>45,83%</td>
+									<td>1</td>
+									<td>12</td>
+									<td>24</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td class="name">Агафонова Н.В.</td>
+									<td>27.11.2014</td>
+									<td>02.12.2014</td>
+									<td>2454</td>
+									<td>15,78%</td>
+									<td>8437</td>
+									<td>4665</td>
+									<td>15556</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td class="name">Алексєєв І.С.</td>
+									<td>27.11.2014</td>
+									<td></td>
+									<td>10132</td>
+									<td>61,68%</td>
+									<td>5556</td>
+									<td>738</td>
+									<td>16426</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="nav-tab3" role="tabpanel" aria-labelledby="nav-tab3-tab">
+					<div class="table-responsive mt-0">
+						<table class="table table-hover">
+							<thead>
+								<tr>
+									<th>№</th>
+									<th>Депутат</th>
+									<th>Початок повноважень</th>
+									<th>Припинення повноважень</th>
+									<th>Голосував</th>
+									<th>Голосував(%)</th>
+									<th>Не голосував</th>
+									<th>Відсутній</th>
+									<th>Всього</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td class="name">Абдуллін О.Р.</td>
+									<td>27.11.2014</td>
+									<td></td>
+									<td>5919</td>
+									<td>36,03%</td>
+									<td>4750</td>
+									<td>5757</td>
+									<td>16426</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td class="name">Аваков А.Б.</td>
+									<td>27.11.2014</td>
+									<td>02.12.2014</td>
+									<td>11</td>
+									<td>45,83%</td>
+									<td>1</td>
+									<td>12</td>
+									<td>24</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td class="name">Агафонова Н.В.</td>
+									<td>27.11.2014</td>
+									<td>02.12.2014</td>
+									<td>2454</td>
+									<td>15,78%</td>
+									<td>8437</td>
+									<td>4665</td>
+									<td>15556</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td class="name">Алексєєв І.С.</td>
+									<td>27.11.2014</td>
+									<td></td>
+									<td>10132</td>
+									<td>61,68%</td>
+									<td>5556</td>
+									<td>738</td>
+									<td>16426</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-xl-3 mb-3"><a href="index.html" class="footer-brand">Законотворчість</a></div>
+            <div class="col mb-3">
+                <h4 class="h4">Законопроекти</h4>
+                <div class="list">
+                    <div class="item">Пошук за реквізитами</div>
+                    <div class="item">Правила оформлення проектів законів
+                        та основні вимоги законодавчої техніки
+                    </div>
+                    <div class="item">Зареєстровані на поточний тиждень</div>
+                    <div class="item">Надано народним депутатам</div>
+                    <div class="item">Знаходяться на розгляді в комітетах</div>
+                    <div class="item">Прийняті на поточній сессії</div>
+                </div>
+            </div>
+            <div class="col mb-3">
+                <h4 class="h4">Пленарні засідання</h4>
+                <div class="list">
+                    <div class="item">Планування та порядо розгляду питань</div>
+                    <div class="item">Погоджувальні ради</div>
+                    <div class="item">Розгляд питань порядку денного</div>
+
+                </div>
+            </div>
+            <div class="col mb-3">
+                <div class="list-box">
+                    <h4 class="h4">Парламентські слухання</h4>
+                    <div class="list">
+                        <div class="item">Проведення парламентськіх слухань</div>
+                        <div class="item">Хроніка парламентськіх слухань</div>
+                        <div class="item social-block">
+                            <i class="fab fa-youtube"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-facebook-square"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer-bottom">
+    <div class="container">
+        <span class="copyright">&copy; Верховна Рада України 1994-2019</span>
+    </div>
+</div>
+
+
+
+<!-- Optional JavaScript -->
+<script src="js/main.js"></script>
+<script src="js/app.js"></script>
+</body>
+
+</html>
