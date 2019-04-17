@@ -2,38 +2,38 @@
 .projects {
     padding-bottom: 100px;
 
-    .item {
-        padding: 30px;
-
-        .number {
-            display: inline-flex;
-            font-size: 1.5rem; // 24px 
-            font-weight: 700;
-            color: $blue;
-            border: 2px solid $blue;
-            padding: 5px 50px;
-        }
-
-        .title {
-            font-weight: 700;
-            color: $dark;
-            padding: 20px 0;
-        }
-
-        .more {
-            font-weight: 700;
-            text-decoration: underline;
-        }
-
-        &:hover {
-            box-shadow: $box-shadow;
-        }
-    }
-
     .box-button {
         margin-top: 30px;
     }
+}
 
+// item
+.item {
+    padding: 30px;
+
+    .number {
+        display: inline-flex;
+        font-size: 1.5rem; // 24px 
+        font-weight: 700;
+        color: $blue;
+        border: 2px solid $blue;
+        padding: 5px 50px;
+    }
+
+    .title {
+        font-weight: 700;
+        color: $dark;
+        padding: 20px 0;
+    }
+
+    .more {
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    &:hover {
+        box-shadow: $box-shadow;
+    }
 }
 
 // read-also

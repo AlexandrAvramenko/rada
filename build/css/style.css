@@ -17344,10 +17344,6 @@ a:hover {
     color: rgba(0, 0, 0, 0.8);
 }
 
-.news {
-    margin-bottom: 100px;
-}
-
 .news .news-img {
     width: 100%;
 }
@@ -17365,11 +17361,15 @@ a:hover {
     padding-bottom: 100px;
 }
 
-.projects .item {
+.projects .box-button {
+    margin-top: 30px;
+}
+
+.item {
     padding: 30px;
 }
 
-.projects .item .number {
+.item .number {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -17380,24 +17380,20 @@ a:hover {
     padding: 5px 50px;
 }
 
-.projects .item .title {
+.item .title {
     font-weight: 700;
     color: #212121;
     padding: 20px 0;
 }
 
-.projects .item .more {
+.item .more {
     font-weight: 700;
     text-decoration: underline;
 }
 
-.projects .item:hover {
+.item:hover {
     -webkit-box-shadow: 0px 8px 34.2px 10.8px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 8px 34.2px 10.8px rgba(0, 0, 0, 0.1);
-}
-
-.projects .box-button {
-    margin-top: 30px;
 }
 
 .read-also {
