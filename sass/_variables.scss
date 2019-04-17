@@ -1,8 +1,11 @@
 // Responsive
+$max-xxs: 479.98px;
 $max-xs: 575.98px;
 $max-sm: 767.98px;
 $max-md: 991.98px;
 $max-lg: 1199.98px;
+$min-sm: 768px;
+$min-md: 992px;
 $min-xl: 1200px;
 $min-xxl: 1500px;
 $min-xxxl: 1750px;
@@ -18,6 +21,13 @@ $white:          #ffffff;
 $dark:           #212121;
 $blue:           #216f9f;
 $light-blue:     #ebf2f9;
+
+// Colors-calendar
+$calendar-sirenium:       #e1c9ff;
+$calendar-yellow:         #fdf782;
+$calendar-green:          #b4d7a0;
+$calendar-blue:           #b4bff9;
+$calendar-red:            #ebbcb0;
 
 
 // Fonts

@@ -16821,6 +16821,174 @@ a:hover {
     align-items: center;
 }
 
+.calendars {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 575.98px) {
+    .calendars {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+}
+
+.calendars img {
+    display: block;
+    margin: 65px 0;
+    -webkit-box-shadow: 0px 8px 34.2px 10.8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 8px 34.2px 10.8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 767.98px) {
+    .calendars img {
+        margin: 20px 0;
+    }
+}
+
+.colors-calendar .list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 767.98px) {
+    .colors-calendar .list {
+        margin: 20px 0;
+    }
+}
+
+.colors-calendar .list .item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.colors-calendar .list .item .color {
+    width: 70px;
+    min-width: 70px;
+    height: 25px;
+}
+
+.colors-calendar .list .item .calendar-sirenium {
+    background: #e1c9ff;
+}
+
+.colors-calendar .list .item .calendar-yellow {
+    background: #fdf782;
+}
+
+.colors-calendar .list .item .calendar-green {
+    background: #b4d7a0;
+}
+
+.colors-calendar .list .item .calendar-blue {
+    background: #b4bff9;
+}
+
+.colors-calendar .list .item .calendar-red {
+    background: #ebbcb0;
+}
+
+.colors-calendar .list .item .name {
+    padding: 0 50px 0 15px;
+}
+
+@media (min-width: 1500px) {
+    .carousel-multi-item .controls .carousel-control-prev,
+  .carousel-multi-item .controls .carousel-control-next {
+        width: 3%;
+    }
+}
+
+.carousel-multi-item .controls .carousel-control-prev .fa-chevron-left,
+.carousel-multi-item .controls .carousel-control-prev .fa-chevron-right,
+.carousel-multi-item .controls .carousel-control-next .fa-chevron-left,
+.carousel-multi-item .controls .carousel-control-next .fa-chevron-right {
+    width: 44px;
+    height: 44px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #010101;
+    background: #ebf2f9;
+}
+
+@media (min-width: 1500px) {
+    .carousel-multi-item .carousel-inner {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+.carousel-multi-item .carousel-inner .carousel-item .card-link {
+    position: relative;
+    display: block;
+}
+
+.carousel-multi-item .carousel-inner .carousel-item .card-link .after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: auto;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    padding: 0 15px;
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+    .carousel-multi-item .carousel-inner .carousel-item .card-link .after {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 479.98px) {
+    .carousel-multi-item .carousel-inner .carousel-item .card-link .after {
+        font-size: 1rem;
+    }
+}
+
+.carousel-multi-item .carousel-inner .carousel-item .card-link .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(33, 111, 159, 0.5);
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+.carousel-multi-item .carousel-inner .carousel-item .card-link .overlay:hover {
+    outline: 1px solid #ffffff;
+    outline-offset: -15px;
+    overflow: hidden;
+    background: rgba(33, 111, 159, 0.75);
+}
+
 .header-main {
     background-image: -webkit-linear-gradient(90deg, #2075a9 0%, #2087c1 100%);
     background-image: -ms-linear-gradient(90deg, #2075a9 0%, #2087c1 100%);
@@ -17447,39 +17615,6 @@ a:hover {
 
 .information-sheets .marking .list .item {
     margin-bottom: 20px;
-}
-
-.calendars {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-top: 65px;
-}
-
-@media (max-width: 575.98px) {
-    .calendars {
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-    }
-}
-
-.calendars img {
-    display: block;
-    margin: 65px 0;
-    -webkit-box-shadow: 0px 8px 34.2px 10.8px rgba(0, 0, 0, 0.1);
-    box-shadow: 0px 8px 34.2px 10.8px rgba(0, 0, 0, 0.1);
-}
-
-@media (max-width: 767.98px) {
-    .calendars img {
-        margin: 20px 0;
-    }
 }
 
 .card-zakonoproektu .h2 {
