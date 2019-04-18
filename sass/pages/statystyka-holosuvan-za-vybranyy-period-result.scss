@@ -3,6 +3,10 @@
         box-shadow: $box-shadow;
         padding: 40px 60px;
 
+        @media (max-width: $max-xs) {
+            padding: 40px 15px;
+        }
+
         .form-group {
             align-items: center;
             max-width: 1260px;
@@ -20,7 +24,7 @@
             }
 
             .btn {
-                @media (max-width: $max-md) {
+                @media (max-width: $max-lg) {
                     display: flex;
                     margin: auto;
                 }

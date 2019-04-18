@@ -132,103 +132,250 @@
 	<nav aria-label="breadcrumb">
 		<ol class="breadcrumb">
 			<li class="breadcrumb-item"><a href="#">Головна</a></li>
-			<li class="breadcrumb-item active" aria-current="page">Пошук за реквізитами</li>
+			<li class="breadcrumb-item active" aria-current="page">Статистика голосувань за вибраний період</li>
 		</ol>
 	</nav>
 
-	<div class="search-box mb_100">
+	<div class="statystyka-holosuvan mb_100">
+		<h2 class="h2">Для висвітлення статистики голосувань народних депутатів виберіть часовий інтервал.
+			Чим більший часовий інтервал, тим довший час генерації сторінки та її обсяг.</h2>
 
-		<div class="form-group row">
-			<label for="colFormLabelLg" class="col-sm-3 col-form-label">Сесія розгляду:</label>
-			<div class="col-xl-6 col">
-				<select class="form-control form-control-lg">
-					<option>Всі сесії VII скликання</option>
-					<option>Всі сесії VII скликання</option>
-					<option>Всі сесії VII скликання</option>
-					<option>Всі сесії VII скликання</option>
-					<option>Всі сесії VII скликання</option>
-				</select>
-			</div>
-		</div>
-
-		<div class="form-group row">
-			<label for="colFormLabelLg" class="col-sm-3 col-form-label">№ реєстрацiї</label>
-			<div class="col col-xl-6">
-				<div class="row">
-					<div class="col">
-						<select class="form-control form-control-lg">
-							<option>Містить</option>
-							<option>Містить</option>
-							<option>Містить</option>
-							<option>Містить</option>
-							<option>Містить</option>
-						</select>
-					</div>
-					<div class="col">
-						<select class="form-control form-control-lg">
-							<option> </option>
-							<option> </option>
-							<option> </option>
-							<option> </option>
-							<option> </option>
-						</select>
+		<div class="filter mt_60">
+			<div class="form-group row">
+				<div class="col-sm-12 col-lg-5">
+					<div class=" row">
+						<label for="colFormLabelLg" class="col-xs-12 col-form-label">Дата з</label>
+						<div class="col col-lg-9">
+							<input type="email" class="form-control form-control-lg" placeholder="20 груд 2018">
+						</div>
 					</div>
 				</div>
-			</div>
-		</div>
-		
-		<div class="form-group row">
-			<label for="colFormLabelLg" class="col-sm-3 col-form-label">Дата реєстрацiї</label>
-			<div class="col col-xl-6">
-				<div class="row">
-					<div class="col">
-						<input type="email" class="form-control form-control-lg" placeholder="20 груд 2018">
+				<div class="col-sm-12 col-lg-5">
+					<div class="row">
+						<label for="colFormLabelLg" class="col-xs-12 col-form-label">до</label>
+						<div class="col col-lg-9">
+							<input type="email" class="form-control form-control-lg" placeholder="20 груд 2018">
+						</div>
 					</div>
-					<div class="col">
-						<input type="email" class="form-control form-control-lg" placeholder="20 січ 2019">
-					</div>
+				</div>
+				<div class="col col-lg-2">
+					<button type="button" class="btn btn-primary btn-lg rounded-0 ">Показати</button>
 				</div>
 			</div>
 		</div>
 
-		<div class="form-group row">
-			<label for="colFormLabelLg" class="col-sm-3 col-form-label">Назва (слова з назви):</label>
-			<div class="col col-xl-6">
-				<input type="email" class="form-control form-control-lg" id="colFormLabelLg"
-					placeholder="Законотворчіс">
-			</div>
-		</div>
 
-		<div class="row">
-			<div class="col-12 col-md-3 font-weight-bold"></div>
-			<div class="col col-md-6">
-				<div class="checkbox">
-					<div class="form-group">
-						<input type="checkbox" id="checkbox-1">
-						<label for="checkbox-1">Результат в новому вікні</label>
-					</div>
-					<div class="form-group">
-						<input type="checkbox" id="checkbox-2" checked>
-						<label for="checkbox-2">Детальний перелік</label>
+		<div id="tabs" class="mt_60">
+			<div class="nav" id="nav-tab" role="tablist">
+				<a class="nav-link active" id="nav-tab1-tab" data-toggle="tab" href="#nav-tab1" role="tab"
+					aria-controls="nav-tab1" aria-selected="true">За алфавітом</a>
+				<a class="nav-link" id="nav-tab2-tab" data-toggle="tab" href="#nav-tab2" role="tab"
+					aria-controls="nav-tab2" aria-selected="false">Зростання активності</a>
+				<a class="nav-link" id="nav-tab3-tab" data-toggle="tab" href="#nav-tab3" role="tab"
+					aria-controls="nav-tab3" aria-selected="false">Спадання активності</a>
+			</div>
+			<div class="links">
+				<a href="file.pdf" class="link-blue">Відкрити в новій вкладці</a>
+			</div>
+			<div class="tab-content px-3 px-sm-0" id="nav-tabContent">
+				<div class="tab-pane fade show active" id="nav-tab1" role="tabpanel" aria-labelledby="nav-tab1-tab">
+					<div class="table-responsive mt-0">
+						<table class="table table-hover">
+							<thead>
+								<tr>
+									<th>№</th>
+									<th>Депутат</th>
+									<th>Початок повноважень</th>
+									<th>Припинення повноважень</th>
+									<th>Голосував</th>
+									<th>Голосував(%)</th>
+									<th>Не голосував</th>
+									<th>Відсутній</th>
+									<th>Всього</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td class="name">Абдуллін О.Р.</td>
+									<td>27.11.2014</td>
+									<td></td>
+									<td>5919</td>
+									<td>36,03%</td>
+									<td>4750</td>
+									<td>5757</td>
+									<td>16426</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td class="name">Аваков А.Б.</td>
+									<td>27.11.2014</td>
+									<td>02.12.2014</td>
+									<td>11</td>
+									<td>45,83%</td>
+									<td>1</td>
+									<td>12</td>
+									<td>24</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td class="name">Агафонова Н.В.</td>
+									<td>27.11.2014</td>
+									<td>02.12.2014</td>
+									<td>2454</td>
+									<td>15,78%</td>
+									<td>8437</td>
+									<td>4665</td>
+									<td>15556</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td class="name">Алексєєв І.С.</td>
+									<td>27.11.2014</td>
+									<td></td>
+									<td>10132</td>
+									<td>61,68%</td>
+									<td>5556</td>
+									<td>738</td>
+									<td>16426</td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
 				</div>
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="col-12 col-md-3 font-weight-bold"></div>
-			<div class="col col-md-6">
-				<div class="buttons">
-					<a	href="rezultat-poshuku.html" type="button" class="btn btn-primary btn-lg rounded-0">Пошук</a>
-					<button type="button" class="btn btn-light btn-lg rounded-0">Очистити</button>
-					<a href="#" class="link-blue ml-auto">Допомога</a>
+				<div class="tab-pane fade" id="nav-tab2" role="tabpanel" aria-labelledby="nav-tab2-tab">
+					<div class="table-responsive mt-0">
+						<table class="table table-hover">
+							<thead>
+								<tr>
+									<th>№</th>
+									<th>Депутат</th>
+									<th>Початок повноважень</th>
+									<th>Припинення повноважень</th>
+									<th>Голосував</th>
+									<th>Голосував(%)</th>
+									<th>Не голосував</th>
+									<th>Відсутній</th>
+									<th>Всього</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td class="name">Абдуллін О.Р.</td>
+									<td>27.11.2014</td>
+									<td></td>
+									<td>5919</td>
+									<td>36,03%</td>
+									<td>4750</td>
+									<td>5757</td>
+									<td>16426</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td class="name">Аваков А.Б.</td>
+									<td>27.11.2014</td>
+									<td>02.12.2014</td>
+									<td>11</td>
+									<td>45,83%</td>
+									<td>1</td>
+									<td>12</td>
+									<td>24</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td class="name">Агафонова Н.В.</td>
+									<td>27.11.2014</td>
+									<td>02.12.2014</td>
+									<td>2454</td>
+									<td>15,78%</td>
+									<td>8437</td>
+									<td>4665</td>
+									<td>15556</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td class="name">Алексєєв І.С.</td>
+									<td>27.11.2014</td>
+									<td></td>
+									<td>10132</td>
+									<td>61,68%</td>
+									<td>5556</td>
+									<td>738</td>
+									<td>16426</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 				</div>
-				<a href="rozshyrenyy-poshuk-za-rekvizytamy.html" class="link-blue">Перейти до розширенної форми пошуку</a>
+				<div class="tab-pane fade" id="nav-tab3" role="tabpanel" aria-labelledby="nav-tab3-tab">
+					<div class="table-responsive mt-0">
+						<table class="table table-hover">
+							<thead>
+								<tr>
+									<th>№</th>
+									<th>Депутат</th>
+									<th>Початок повноважень</th>
+									<th>Припинення повноважень</th>
+									<th>Голосував</th>
+									<th>Голосував(%)</th>
+									<th>Не голосував</th>
+									<th>Відсутній</th>
+									<th>Всього</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td class="name">Абдуллін О.Р.</td>
+									<td>27.11.2014</td>
+									<td></td>
+									<td>5919</td>
+									<td>36,03%</td>
+									<td>4750</td>
+									<td>5757</td>
+									<td>16426</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td class="name">Аваков А.Б.</td>
+									<td>27.11.2014</td>
+									<td>02.12.2014</td>
+									<td>11</td>
+									<td>45,83%</td>
+									<td>1</td>
+									<td>12</td>
+									<td>24</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td class="name">Агафонова Н.В.</td>
+									<td>27.11.2014</td>
+									<td>02.12.2014</td>
+									<td>2454</td>
+									<td>15,78%</td>
+									<td>8437</td>
+									<td>4665</td>
+									<td>15556</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td class="name">Алексєєв І.С.</td>
+									<td>27.11.2014</td>
+									<td></td>
+									<td>10132</td>
+									<td>61,68%</td>
+									<td>5556</td>
+									<td>738</td>
+									<td>16426</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-
-
 </div>
 
 <div class="footer">
