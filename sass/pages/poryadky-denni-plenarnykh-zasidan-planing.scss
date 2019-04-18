@@ -1,0 +1,20 @@
+.poryadok-sesii {
+    ul {        
+        min-width: 280px;
+        list-style: none;
+
+        @media (max-width: $max-xs) {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 40px;
+        }
+
+        li {
+            padding-bottom: 10px;
+
+            @media (max-width: $max-xs) {
+                padding: 10px;
+            }
+        }
+    }
+}
