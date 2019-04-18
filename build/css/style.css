@@ -16857,7 +16857,7 @@ a:active {
     }
 }
 
-.colors-calendar .list {
+.colors-calendar .colors-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -16866,45 +16866,45 @@ a:active {
 }
 
 @media (max-width: 767.98px) {
-    .colors-calendar .list {
+    .colors-calendar .colors-list {
         margin: 20px 0;
     }
 }
 
-.colors-calendar .list .item {
+.colors-calendar .colors-list .colors-item {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin-bottom: 20px;
 }
 
-.colors-calendar .list .item .color {
+.colors-calendar .colors-list .colors-item .color {
     width: 70px;
     min-width: 70px;
     height: 25px;
 }
 
-.colors-calendar .list .item .calendar-sirenium {
+.colors-calendar .colors-list .colors-item .calendar-sirenium {
     background: #e1c9ff;
 }
 
-.colors-calendar .list .item .calendar-yellow {
+.colors-calendar .colors-list .colors-item .calendar-yellow {
     background: #fdf782;
 }
 
-.colors-calendar .list .item .calendar-green {
+.colors-calendar .colors-list .colors-item .calendar-green {
     background: #b4d7a0;
 }
 
-.colors-calendar .list .item .calendar-blue {
+.colors-calendar .colors-list .colors-item .calendar-blue {
     background: #b4bff9;
 }
 
-.colors-calendar .list .item .calendar-red {
+.colors-calendar .colors-list .colors-item .calendar-red {
     background: #ebbcb0;
 }
 
-.colors-calendar .list .item .name {
+.colors-calendar .colors-list .colors-item .name {
     padding: 0 50px 0 15px;
 }
 
