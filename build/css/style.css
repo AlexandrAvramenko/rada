@@ -17157,7 +17157,7 @@ a:active {
 }
 
 .header {
-    min-height: 120px;
+    min-height: 122px;
     background-image: -webkit-linear-gradient(90deg, #2075a9 0%, #2087c1 100%);
     background-image: -ms-linear-gradient(90deg, #2075a9 0%, #2087c1 100%);
 }
@@ -17278,7 +17278,7 @@ a:active {
     background: #216f9f;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 1199.98px) {
     .header .navbar-collapse .navbar-nav .nav-item .dropdown-menu .dropdown-submenu .dropdown-menu {
         position: static;
     }
