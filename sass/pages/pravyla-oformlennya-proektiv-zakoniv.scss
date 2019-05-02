@@ -17,10 +17,11 @@
 
     .links {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-between;        
 
         .link-blue {
-            font-weight: 400;            
+            font-weight: 400;
+            border-bottom: none;            
             padding-left: 6px;
 
             &:before {
@@ -38,7 +39,6 @@
             margin: 0;
             label {
                 color: $blue;
-                text-decoration: underline;
                 cursor: pointer;
                 margin: 0;
 

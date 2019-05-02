@@ -83,13 +83,19 @@
 	@media (max-width: $max-lg) {
 		min-height: 60px;
 	}
-
+	
 	.navbar {
 		justify-content: flex-end;
 		padding: .5rem 0 !important;
 
 		@media (max-width: $max-xs) {
 			justify-content: center;
+		}
+
+		a {
+			&:hover {
+				border-bottom: none;
+			}		
 		}
 	}
 
@@ -103,7 +109,7 @@
 			@media (min-width: $min-xl) {
 				font-size: 1.875rem; // 30px
 				margin-bottom: -50px;
-			}
+			}			
 		}
 
 		.nav-link {

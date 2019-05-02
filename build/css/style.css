@@ -16369,14 +16369,30 @@ h5 {
 
 a {
     color: #010101;
+    line-height: 1.3;
+    border-bottom: 1px solid transparent;
 }
 
 a:hover {
     color: #216f9f;
+    text-decoration: none;
+    border-bottom: 1px solid #216f9f;
 }
 
 a:active {
     color: #216f9f;
+    text-decoration: none;
+    border-bottom: 1px solid #216f9f;
+}
+
+.more {
+    color: rgba(0, 0, 0, 0.8);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+.more:hover {
+    color: #216f9f;
+    border-bottom: 1px solid #216f9f;
 }
 
 .container {
@@ -16532,12 +16548,13 @@ a:active {
 
 .link-blue {
     font-weight: 700;
-    text-decoration: underline;
+    border-bottom: 1px solid #216f9f;
     color: #216f9f !important;
 }
 
 .link-blue:hover {
     color: #010101 !important;
+    border-bottom: 1px solid #010101;
 }
 
 .btn-lg, .btn-group-lg > .btn {
@@ -16555,8 +16572,8 @@ a:active {
     border: #216f9f;
 }
 
-.btn .btn-light {
-    background: #ebf2f9;
+.box-button a:hover {
+    border-bottom: none;
 }
 
 .title-mark {
@@ -16738,16 +16755,18 @@ a:active {
     display: none;
     font-size: 1.5rem;
     color: #216f9f;
+    border-bottom: transparent;
 }
 
 .category .card:hover .overlay,
     .category .card:hover .more {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    border-bottom: 1px solid #216f9f;
 }
 
 .category .card:hover .h3 {
@@ -16855,6 +16874,10 @@ a:active {
     .calendars img {
         margin: 20px 0;
     }
+}
+
+.calendars a {
+    border-bottom: none;
 }
 
 .colors-calendar .colors-list {
@@ -16976,17 +16999,22 @@ a:active {
     margin-top: 40px;
 }
 
+.carousel-multi-item .controls .carousel-control-prev,
+.carousel-multi-item .controls .carousel-control-next {
+    border-bottom: none;
+}
+
 @media (min-width: 1500px) {
     .carousel-multi-item .controls .carousel-control-prev,
-  .carousel-multi-item .controls .carousel-control-next {
+    .carousel-multi-item .controls .carousel-control-next {
         width: 3%;
     }
 }
 
 .carousel-multi-item .controls .carousel-control-prev .fa-chevron-left,
-.carousel-multi-item .controls .carousel-control-prev .fa-chevron-right,
-.carousel-multi-item .controls .carousel-control-next .fa-chevron-left,
-.carousel-multi-item .controls .carousel-control-next .fa-chevron-right {
+  .carousel-multi-item .controls .carousel-control-prev .fa-chevron-right,
+  .carousel-multi-item .controls .carousel-control-next .fa-chevron-left,
+  .carousel-multi-item .controls .carousel-control-next .fa-chevron-right {
     width: 44px;
     height: 44px;
     display: -webkit-box;
@@ -17181,6 +17209,10 @@ a:active {
         -ms-flex-pack: center;
         justify-content: center;
     }
+}
+
+.header .navbar a:hover {
+    border-bottom: none;
 }
 
 .header .navbar-light .navbar-brand {
@@ -17418,6 +17450,10 @@ a:active {
     margin-top: 10px;
 }
 
+.card .card-body .row {
+    width: 100%;
+}
+
 .card .card-body .date {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -17459,8 +17495,16 @@ a:active {
 }
 
 .news .more {
+    display: inline-block;
     font-weight: 600;
     color: rgba(0, 0, 0, 0.8);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+    margin-right: auto;
+}
+
+.news .more:hover {
+    color: #216f9f;
+    border-bottom: 1px solid #216f9f;
 }
 
 .projects {
@@ -17494,7 +17538,6 @@ a:active {
 
 .item .more {
     font-weight: 700;
-    text-decoration: underline;
 }
 
 .item:hover {
@@ -17616,6 +17659,7 @@ a:active {
 
 .rules-of-registration .links .link-blue {
     font-weight: 400;
+    border-bottom: none;
     padding-left: 6px;
 }
 
@@ -17634,7 +17678,6 @@ a:active {
 
 .rules-of-registration .links .form-group label {
     color: #216f9f;
-    text-decoration: underline;
     cursor: pointer;
     margin: 0;
 }
@@ -17760,10 +17803,15 @@ a:active {
     margin-right: 20px;
 }
 
+.search-box a {
+    border-bottom: none;
+}
+
 .search-box .link-blue {
     font-size: 1.125rem;
     font-weight: 400;
     padding: 1.125rem 0;
+    border-bottom: none;
     margin-bottom: 20px;
 }
 
@@ -17859,6 +17907,9 @@ a:active {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .tenth-session .box-condition .link {
@@ -17924,6 +17975,7 @@ a:active {
     display: inline-flex;
     font-weight: 400;
     padding-left: 6px;
+    border-bottom: none;
     margin: 20px 0;
 }
 

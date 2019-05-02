@@ -2,7 +2,7 @@
     .buttons {
         display: flex;
         align-items: center;
-        flex-wrap: wrap;
+        flex-wrap: wrap;        
         margin: 40px 0;
 
         @media (max-width: $max-xs) {
@@ -16,10 +16,15 @@
         }
     }
 
+    a {
+        border-bottom: none;
+    }
+
     .link-blue {
         font-size: 1.125rem; // 18px 
         font-weight: 400;
         padding: 1.125rem 0;
+        border-bottom: none;        
         margin-bottom: 20px;
 
         @media (max-width: $max-xs) {

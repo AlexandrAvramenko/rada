@@ -45,6 +45,10 @@
 		justify-content: space-around;
 		margin-top: 10px;
 
+		.row {
+			width: 100%;
+		}
+
 		.date {
 			display: flex;
 			flex-direction: column;
@@ -83,7 +87,15 @@
 	}
 
 	.more {
+		display: inline-block;
 		font-weight: 600;
 		color: $black-80;
+		border-bottom: 1px solid $black-80;
+		margin-right: auto;
+
+		&:hover {
+			color: $blue;
+			border-bottom: 1px solid $blue;
+		}
 	}
 }
