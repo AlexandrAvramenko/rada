@@ -4,11 +4,19 @@
 	background-image: -webkit-linear-gradient(90deg, rgb(32, 117, 169) 0%, rgb(32, 135, 193) 100%);
 	background-image: -ms-linear-gradient(90deg, rgb(32, 117, 169) 0%, rgb(32, 135, 193) 100%);
 
+	a {
+		border-bottom: none;
+
+		&:hover {
+			border-bottom: none;
+		}		
+	}
+
 	.navbar {
 		justify-content: flex-end;
 		padding: .5rem 0 !important;
 
-		@media (max-width: $max-xs) {
+		@media (max-width: $max-sm) {
 			justify-content: center;
 		}
 	}
@@ -20,7 +28,9 @@
 			color: $white;
 			margin-right: auto;
 
-			@media (max-width: $max-xs) {
+			@media (max-width: $max-sm) {
+				width: 100%;
+				text-align: center;
 				margin: auto;
 			}
 		}
@@ -71,31 +81,38 @@
 	}
 }
 
-// Header
 
+// Header
 .header {
-	min-height: 122px;
+	min-height: 115px;
 	background-image: -moz-linear-gradient(90deg, rgb(32, 117, 169) 0%, rgb(32, 135, 193) 100%);
 	background-image: -webkit-linear-gradient(90deg, rgb(32, 117, 169) 0%, rgb(32, 135, 193) 100%);
 	background-image: -ms-linear-gradient(90deg, rgb(32, 117, 169) 0%, rgb(32, 135, 193) 100%);
-	// overflow: hidden;
+	overflow: hidden;
 
 	@media (max-width: $max-lg) {
+		display: flex;
+		align-items: center;
 		min-height: 60px;
+	}
+
+	a {
+		border-bottom: none;
+		
+		&:hover {
+			border-bottom: none;
+		}		
 	}
 	
 	.navbar {
-		justify-content: flex-end;
-		padding: .5rem 0 !important;
+		justify-content: flex-end;		
 
 		@media (max-width: $max-xs) {
 			justify-content: center;
 		}
 
-		a {
-			&:hover {
-				border-bottom: none;
-			}		
+		@media (min-width: $min-xl) {
+			padding: 0;
 		}
 	}
 
@@ -108,7 +125,7 @@
 
 			@media (min-width: $min-xl) {
 				font-size: 1.875rem; // 30px
-				margin-bottom: -50px;
+				margin-bottom: -45px;
 			}			
 		}
 
@@ -131,7 +148,6 @@
 				@media (min-width: $min-xl) {
 					position: static;
 					padding: 10px 8px;
-					margin: -8px 0 0;
 				}
 
 				.dropdown-menu {

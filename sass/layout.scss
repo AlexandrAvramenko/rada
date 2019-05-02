@@ -82,6 +82,10 @@ a {
     box-sizing: border-box;
 }
 
+.visible {
+    overflow: visible !important;
+}
+
 // input
 
 .col-form-label {
@@ -238,9 +242,6 @@ a {
 .btn-primary {
     background: $blue;
     border: $blue;
-}
-
-.btn .btn-light {
 }
 
 .box-button {

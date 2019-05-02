@@ -16403,6 +16403,10 @@ a:active {
     box-sizing: border-box;
 }
 
+.visible {
+    overflow: visible !important;
+}
+
 .col-form-label {
     font-size: 1.125rem;
     font-weight: 700;
@@ -17094,6 +17098,14 @@ a:active {
     background-image: -ms-linear-gradient(90deg, #2075a9 0%, #2087c1 100%);
 }
 
+.header-main a {
+    border-bottom: none;
+}
+
+.header-main a:hover {
+    border-bottom: none;
+}
+
 .header-main .navbar {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
@@ -17101,7 +17113,7 @@ a:active {
     padding: .5rem 0 !important;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
     .header-main .navbar {
         -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -17116,8 +17128,10 @@ a:active {
     margin-right: auto;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
     .header-main .navbar-light .navbar-brand {
+        width: 100%;
+        text-align: center;
         margin: auto;
     }
 }
@@ -17185,22 +17199,36 @@ a:active {
 }
 
 .header {
-    min-height: 122px;
+    min-height: 115px;
     background-image: -webkit-linear-gradient(90deg, #2075a9 0%, #2087c1 100%);
     background-image: -ms-linear-gradient(90deg, #2075a9 0%, #2087c1 100%);
+    overflow: hidden;
 }
 
 @media (max-width: 1199.98px) {
     .header {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
         min-height: 60px;
     }
+}
+
+.header a {
+    border-bottom: none;
+}
+
+.header a:hover {
+    border-bottom: none;
 }
 
 .header .navbar {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
-    padding: .5rem 0 !important;
 }
 
 @media (max-width: 575.98px) {
@@ -17211,8 +17239,10 @@ a:active {
     }
 }
 
-.header .navbar a:hover {
-    border-bottom: none;
+@media (min-width: 1200px) {
+    .header .navbar {
+        padding: 0;
+    }
 }
 
 .header .navbar-light .navbar-brand {
@@ -17225,7 +17255,7 @@ a:active {
 @media (min-width: 1200px) {
     .header .navbar-light .navbar-brand {
         font-size: 1.875rem;
-        margin-bottom: -50px;
+        margin-bottom: -45px;
     }
 }
 
@@ -17249,7 +17279,6 @@ a:active {
     .header .navbar-collapse .navbar-nav .nav-item {
         position: static;
         padding: 10px 8px;
-        margin: -8px 0 0;
     }
 }
 

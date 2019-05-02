@@ -12,7 +12,7 @@ $(document).ready(function () {
 		
 		$el.parents("li.nav-item.dropdown.show").on("hidden.bs.dropdown", function () {
 			$(".dropdown-menu .show").removeClass("show");
-		});
+		});		
 		
 		if (!$parent.parent().hasClass("navbar-nav")) {
 			$el.next().css({"top":$el[0].offsetTop,"left":$parent.outerWidth()});
@@ -29,6 +29,16 @@ $(document).ready(function () {
 		}
 	});
 
+	//menu hidden submenu
+	$('.header').on('click',function(event){
+		if(!$(event.target).is('#nav-toggle')){
+			$(".header").removeClass("visible");
+		}
+	 });
+
+	$( "#dropdown-visible" ).click(function() {
+		$(".header").addClass("visible");
+	  });
 
 	// tooltip
 	$(function () {
