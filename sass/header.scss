@@ -169,7 +169,7 @@
 					}
 
 					.dropdown-submenu {
-
+						position: relative;
 
 						.dropdown-menu {
 							position: absolute;
@@ -179,12 +179,7 @@
 							border-top: 1px solid $border;
 
 							@media (min-width: $min-xl) {
-								width: 1115px;
-							}
-
-							@media (min-width: $min-xl) and (max-width: $min-xxl) {
-								left: 50% !important;
-								transform: translate(-50%, 0);
+								width: 328px;
 							}
 
 							ul {
