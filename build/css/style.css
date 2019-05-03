@@ -17320,6 +17320,15 @@ a:active {
     }
 }
 
+@media (min-width: 1200px) and (max-width: 1500px) {
+    .header .navbar-collapse .navbar-nav .nav-item .dropdown-menu .dropdown-submenu .dropdown-menu {
+        left: 50% !important;
+        -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+        transform: translate(-50%, 0);
+    }
+}
+
 .header .navbar-collapse .navbar-nav .nav-item .dropdown-menu .dropdown-submenu .dropdown-menu ul {
     padding: 15px 0;
 }

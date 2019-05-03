@@ -9,7 +9,7 @@
 
 		&:hover {
 			border-bottom: none;
-		}		
+		}
 	}
 
 	.navbar {
@@ -98,14 +98,14 @@
 
 	a {
 		border-bottom: none;
-		
+
 		&:hover {
 			border-bottom: none;
-		}		
+		}
 	}
-	
+
 	.navbar {
-		justify-content: flex-end;		
+		justify-content: flex-end;
 
 		@media (max-width: $max-xs) {
 			justify-content: center;
@@ -126,7 +126,7 @@
 			@media (min-width: $min-xl) {
 				font-size: 1.875rem; // 30px
 				margin-bottom: -45px;
-			}			
+			}
 		}
 
 		.nav-link {
@@ -180,6 +180,11 @@
 
 							@media (min-width: $min-xl) {
 								width: 1115px;
+							}
+
+							@media (min-width: $min-xl) and (max-width: $min-xxl) {
+								left: 50% !important;
+								transform: translate(-50%, 0);
 							}
 
 							ul {
