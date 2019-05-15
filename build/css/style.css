@@ -17586,6 +17586,10 @@ a:active {
     padding-bottom: 100px;
 }
 
+.projects .item {
+    margin-bottom: 50px;
+}
+
 .projects .box-button {
     margin-top: 30px;
 }
@@ -17594,7 +17598,6 @@ a:active {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-bottom: 50px;
     padding: 0;
 }
 

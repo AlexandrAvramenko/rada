@@ -2,6 +2,10 @@
 .projects {
     padding-bottom: 100px;
 
+    .item {
+        margin-bottom: 50px;
+    }
+
     .box-button {
         margin-top: 30px;
     }
@@ -9,8 +13,7 @@
 
 // item
 .item {
-    display: flex;
-    margin-bottom: 50px;
+    display: flex;    
     padding: 0;
 
     @media (max-width: $max-sm) {
