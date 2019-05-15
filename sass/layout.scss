@@ -87,7 +87,6 @@ a {
 }
 
 // input
-
 .col-form-label {
     font-size: 1.125rem; // 18px 
     font-weight: 700;
@@ -629,6 +628,34 @@ a {
     .card-box {
         text-align: center;
         margin-top: 40px;
+    }
+}
+
+// item
+.item {
+    padding: 30px;
+
+    .number {
+        display: inline-flex;
+        font-size: 1.5rem; // 24px 
+        font-weight: 700;
+        color: $blue;
+        border: 2px solid $blue;
+        padding: 5px 50px;
+    }
+
+    .title {
+        font-weight: 700;
+        color: $dark;
+        padding: 20px 0;
+    }
+
+    .more {
+        font-weight: 700;
+    }
+
+    &:hover {
+        box-shadow: $box-shadow;
     }
 }
 

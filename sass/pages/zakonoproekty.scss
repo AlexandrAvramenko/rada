@@ -9,34 +9,79 @@
 
 // item
 .item {
-    padding: 30px;
+    display: flex;
+    margin-bottom: 50px;
+    padding: 0;
 
-    .number {
-        display: inline-flex;
-        font-size: 1.5rem; // 24px 
-        font-weight: 700;
-        color: $blue;
-        border: 2px solid $blue;
-        padding: 5px 50px;
-    }
-
-    .title {
-        font-weight: 700;
-        color: $dark;
-        padding: 20px 0;
-    }
-
-    .more {
-        font-weight: 700;
+    @media (max-width: $max-sm) {
+        flex-wrap: wrap;
     }
 
     &:hover {
-        box-shadow: $box-shadow;
+        box-shadow: none;
     }
+
+    &-img {
+        margin-right: 20px;
+
+        @media (max-width: $max-sm) {
+            margin-bottom: 20px;
+        }
+
+        img {
+            @media (max-width: $max-sm) {
+                width: 100%;
+            }
+        }
+    }
+
+    &-description {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .title {
+            font-size: 20px;
+            font-weight: 700;
+            color: $dark;
+            margin-bottom: 10px;
+            padding: 0;
+        }
+
+        .date {
+            margin-bottom: 10px;
+        }
+
+        .details {
+            color: $black-80;
+        }
+
+        .more {
+            font-weight: 700;
+            margin-top: auto;
+        }
+    }
+
+
 }
 
 // read-also
 .read-also {
     background-color: rgb(245, 245, 245);
-    padding: 100px 0
+    padding: 100px 0;
+
+    .item {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        min-width: 300px;
+        max-width: 480px;
+        padding: 0 20px 20px;
+        margin-bottom: 20px;
+
+        &:hover {
+            box-shadow: $box-shadow;
+            background: #fff;
+        }
+    }
 }
