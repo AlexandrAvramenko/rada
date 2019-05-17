@@ -40,12 +40,6 @@ $(document).ready(function () {
 	$(".visible-drop").click(function () {
 		$(".header").addClass("visible");
 	});
-	// $("#dropdown-visible2").click(function () {
-	// 	$(".header").addClass("visible");
-	// });
-	// $("#dropdown-visible3").click(function () {
-	// 	$(".header").addClass("visible");
-	// });
 
 	// tooltip
 	$(function () {
